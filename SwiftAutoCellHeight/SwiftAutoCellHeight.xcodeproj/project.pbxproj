@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CC468E955E92E7024D3CD59 /* Pods_SwiftAutoCellHeightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707785B22BFF5248BFD8D58E /* Pods_SwiftAutoCellHeightTests.framework */; };
+		34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B21F6A6992000065DD /* AppDelegate.swift */; };
+		34C655B51F6A6992000065DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B41F6A6992000065DD /* ViewController.swift */; };
+		34C655B81F6A6992000065DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655B61F6A6992000065DD /* Main.storyboard */; };
+		34C655BA1F6A6992000065DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C655B91F6A6992000065DD /* Assets.xcassets */; };
+		34C655BD1F6A6992000065DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655BB1F6A6992000065DD /* LaunchScreen.storyboard */; };
+		34C655C81F6A6993000065DD /* SwiftAutoCellHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655C71F6A6993000065DD /* SwiftAutoCellHeightTests.swift */; };
+		34C655D31F6A6993000065DD /* SwiftAutoCellHeightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655D21F6A6993000065DD /* SwiftAutoCellHeightUITests.swift */; };
+		34C655E11F6A6A2C000065DD /* AutoMHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */; };
+		34C655E61F6A75D2000065DD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C655E31F6A75D2000065DD /* Icon.png */; };
+		34C655E71F6A75D2000065DD /* PicText.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C655E41F6A75D2000065DD /* PicText.png */; };
+		34C655E81F6A75D2000065DD /* PicImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C655E51F6A75D2000065DD /* PicImg.png */; };
+		34C656241F6A89C0000065DD /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C656231F6A89C0000065DD /* Logo.swift */; };
+		34F976521F6BD3F800B2D363 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F976501F6BD3F700B2D363 /* Workplace.swift */; };
+		34F976551F6BD41100B2D363 /* Watermark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F976541F6BD41100B2D363 /* Watermark.swift */; };
+		5730B03E2D0D923DA3BCFA69 /* Pods_SwiftAutoCellHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3654FB4407E19E911E6C680 /* Pods_SwiftAutoCellHeight.framework */; };
+		70A192208C1F5AAD85F5BA32 /* Pods_SwiftAutoCellHeightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC093FEB7C59820BFED623FE /* Pods_SwiftAutoCellHeightUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34C655C41F6A6993000065DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34C655A71F6A6992000065DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C655AE1F6A6992000065DD;
+			remoteInfo = SwiftAutoCellHeight;
+		};
+		34C655CF1F6A6993000065DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34C655A71F6A6992000065DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C655AE1F6A6992000065DD;
+			remoteInfo = SwiftAutoCellHeight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31B78E13522598AEA464AFC0 /* Pods-SwiftAutoCellHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		34C655AF1F6A6992000065DD /* SwiftAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C655B21F6A6992000065DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34C655B41F6A6992000065DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34C655B71F6A6992000065DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34C655B91F6A6992000065DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34C655BC1F6A6992000065DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34C655BE1F6A6992000065DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C655C31F6A6993000065DD /* SwiftAutoCellHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAutoCellHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C655C71F6A6993000065DD /* SwiftAutoCellHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAutoCellHeightTests.swift; sourceTree = "<group>"; };
+		34C655C91F6A6993000065DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C655CE1F6A6993000065DD /* SwiftAutoCellHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAutoCellHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C655D21F6A6993000065DD /* SwiftAutoCellHeightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAutoCellHeightUITests.swift; sourceTree = "<group>"; };
+		34C655D41F6A6993000065DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMHTableViewCell.swift; sourceTree = "<group>"; };
+		34C655E31F6A75D2000065DD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		34C655E41F6A75D2000065DD /* PicText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicText.png; sourceTree = "<group>"; };
+		34C655E51F6A75D2000065DD /* PicImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicImg.png; sourceTree = "<group>"; };
+		34C656231F6A89C0000065DD /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		34F976501F6BD3F700B2D363 /* Workplace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
+		34F976541F6BD41100B2D363 /* Watermark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watermark.swift; sourceTree = "<group>"; };
+		54BACC1D560D3D178786B1BC /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C524029E4BA6E9A57AB5284 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests.release.xcconfig"; sourceTree = "<group>"; };
+		707785B22BFF5248BFD8D58E /* Pods_SwiftAutoCellHeightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAutoCellHeightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F29298B9552D9E290DEAE9 /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeightUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeightUITests/Pods-SwiftAutoCellHeightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		79C453CB2FF1F69AC9C4FBE5 /* Pods-SwiftAutoCellHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeight.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight.release.xcconfig"; sourceTree = "<group>"; };
+		C3654FB4407E19E911E6C680 /* Pods_SwiftAutoCellHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAutoCellHeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C104101131095F7DBC562D /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeightUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeightUITests/Pods-SwiftAutoCellHeightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC093FEB7C59820BFED623FE /* Pods_SwiftAutoCellHeightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAutoCellHeightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34C655AC1F6A6992000065DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5730B03E2D0D923DA3BCFA69 /* Pods_SwiftAutoCellHeight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C655C01F6A6993000065DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC468E955E92E7024D3CD59 /* Pods_SwiftAutoCellHeightTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C655CB1F6A6993000065DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A192208C1F5AAD85F5BA32 /* Pods_SwiftAutoCellHeightUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34C655A61F6A6992000065DD = {
+			isa = PBXGroup;
+			children = (
+				34C655B11F6A6992000065DD /* SwiftAutoCellHeight */,
+				34C655C61F6A6993000065DD /* SwiftAutoCellHeightTests */,
+				34C655D11F6A6993000065DD /* SwiftAutoCellHeightUITests */,
+				34C655B01F6A6992000065DD /* Products */,
+				E97F2E42F588877B403612EC /* Pods */,
+				41AE51FBF98CE5C5595B7E76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34C655B01F6A6992000065DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34C655AF1F6A6992000065DD /* SwiftAutoCellHeight.app */,
+				34C655C31F6A6993000065DD /* SwiftAutoCellHeightTests.xctest */,
+				34C655CE1F6A6993000065DD /* SwiftAutoCellHeightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34C655B11F6A6992000065DD /* SwiftAutoCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				34C655B21F6A6992000065DD /* AppDelegate.swift */,
+				34C655B41F6A6992000065DD /* ViewController.swift */,
+				34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */,
+				34C656231F6A89C0000065DD /* Logo.swift */,
+				34F976501F6BD3F700B2D363 /* Workplace.swift */,
+				34F976541F6BD41100B2D363 /* Watermark.swift */,
+				34C655E31F6A75D2000065DD /* Icon.png */,
+				34C655E41F6A75D2000065DD /* PicText.png */,
+				34C655E51F6A75D2000065DD /* PicImg.png */,
+				34C655B61F6A6992000065DD /* Main.storyboard */,
+				34C655B91F6A6992000065DD /* Assets.xcassets */,
+				34C655BB1F6A6992000065DD /* LaunchScreen.storyboard */,
+				34C655BE1F6A6992000065DD /* Info.plist */,
+			);
+			path = SwiftAutoCellHeight;
+			sourceTree = "<group>";
+		};
+		34C655C61F6A6993000065DD /* SwiftAutoCellHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				34C655C71F6A6993000065DD /* SwiftAutoCellHeightTests.swift */,
+				34C655C91F6A6993000065DD /* Info.plist */,
+			);
+			path = SwiftAutoCellHeightTests;
+			sourceTree = "<group>";
+		};
+		34C655D11F6A6993000065DD /* SwiftAutoCellHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34C655D21F6A6993000065DD /* SwiftAutoCellHeightUITests.swift */,
+				34C655D41F6A6993000065DD /* Info.plist */,
+			);
+			path = SwiftAutoCellHeightUITests;
+			sourceTree = "<group>";
+		};
+		41AE51FBF98CE5C5595B7E76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3654FB4407E19E911E6C680 /* Pods_SwiftAutoCellHeight.framework */,
+				707785B22BFF5248BFD8D58E /* Pods_SwiftAutoCellHeightTests.framework */,
+				FC093FEB7C59820BFED623FE /* Pods_SwiftAutoCellHeightUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E97F2E42F588877B403612EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B78E13522598AEA464AFC0 /* Pods-SwiftAutoCellHeight.debug.xcconfig */,
+				79C453CB2FF1F69AC9C4FBE5 /* Pods-SwiftAutoCellHeight.release.xcconfig */,
+				54BACC1D560D3D178786B1BC /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */,
+				5C524029E4BA6E9A57AB5284 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */,
+				72F29298B9552D9E290DEAE9 /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */,
+				D8C104101131095F7DBC562D /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34C655AE1F6A6992000065DD /* SwiftAutoCellHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C655D71F6A6993000065DD /* Build configuration list for PBXNativeTarget "SwiftAutoCellHeight" */;
+			buildPhases = (
+				6CC1B7C4ABCB8DE1273B7FF6 /* [CP] Check Pods Manifest.lock */,
+				34C655AB1F6A6992000065DD /* Sources */,
+				34C655AC1F6A6992000065DD /* Frameworks */,
+				34C655AD1F6A6992000065DD /* Resources */,
+				CC3F68B4D8B24F1A9EA3DF66 /* [CP] Embed Pods Frameworks */,
+				B899B91D70C5DA746E8186B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAutoCellHeight;
+			productName = SwiftAutoCellHeight;
+			productReference = 34C655AF1F6A6992000065DD /* SwiftAutoCellHeight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34C655C21F6A6993000065DD /* SwiftAutoCellHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C655DA1F6A6993000065DD /* Build configuration list for PBXNativeTarget "SwiftAutoCellHeightTests" */;
+			buildPhases = (
+				419AD3568F6C5F0B18E865D7 /* [CP] Check Pods Manifest.lock */,
+				34C655BF1F6A6993000065DD /* Sources */,
+				34C655C01F6A6993000065DD /* Frameworks */,
+				34C655C11F6A6993000065DD /* Resources */,
+				36E28B1A7B24392BA953B8E3 /* [CP] Embed Pods Frameworks */,
+				E49B2C5B0892F3FD368F996D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34C655C51F6A6993000065DD /* PBXTargetDependency */,
+			);
+			name = SwiftAutoCellHeightTests;
+			productName = SwiftAutoCellHeightTests;
+			productReference = 34C655C31F6A6993000065DD /* SwiftAutoCellHeightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34C655CD1F6A6993000065DD /* SwiftAutoCellHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C655DD1F6A6993000065DD /* Build configuration list for PBXNativeTarget "SwiftAutoCellHeightUITests" */;
+			buildPhases = (
+				AA36B246DAD45D373EF30092 /* [CP] Check Pods Manifest.lock */,
+				34C655CA1F6A6993000065DD /* Sources */,
+				34C655CB1F6A6993000065DD /* Frameworks */,
+				34C655CC1F6A6993000065DD /* Resources */,
+				92F4493F3F37DDB6DC340FD8 /* [CP] Embed Pods Frameworks */,
+				299E4E59106AB7071D32DAF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34C655D01F6A6993000065DD /* PBXTargetDependency */,
+			);
+			name = SwiftAutoCellHeightUITests;
+			productName = SwiftAutoCellHeightUITests;
+			productReference = 34C655CE1F6A6993000065DD /* SwiftAutoCellHeightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34C655A71F6A6992000065DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = StevenXie;
+				TargetAttributes = {
+					34C655AE1F6A6992000065DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7QT42R489Z;
+						ProvisioningStyle = Automatic;
+					};
+					34C655C21F6A6993000065DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34C655AE1F6A6992000065DD;
+					};
+					34C655CD1F6A6993000065DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34C655AE1F6A6992000065DD;
+					};
+				};
+			};
+			buildConfigurationList = 34C655AA1F6A6992000065DD /* Build configuration list for PBXProject "SwiftAutoCellHeight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34C655A61F6A6992000065DD;
+			productRefGroup = 34C655B01F6A6992000065DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34C655AE1F6A6992000065DD /* SwiftAutoCellHeight */,
+				34C655C21F6A6993000065DD /* SwiftAutoCellHeightTests */,
+				34C655CD1F6A6993000065DD /* SwiftAutoCellHeightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34C655AD1F6A6992000065DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C655E61F6A75D2000065DD /* Icon.png in Resources */,
+				34C655BD1F6A6992000065DD /* LaunchScreen.storyboard in Resources */,
+				34C655BA1F6A6992000065DD /* Assets.xcassets in Resources */,
+				34C655B81F6A6992000065DD /* Main.storyboard in Resources */,
+				34C655E81F6A75D2000065DD /* PicImg.png in Resources */,
+				34C655E71F6A75D2000065DD /* PicText.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C655C11F6A6993000065DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C655CC1F6A6993000065DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299E4E59106AB7071D32DAF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAutoCellHeightUITests/Pods-SwiftAutoCellHeightUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36E28B1A7B24392BA953B8E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419AD3568F6C5F0B18E865D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC1B7C4ABCB8DE1273B7FF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92F4493F3F37DDB6DC340FD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAutoCellHeightUITests/Pods-SwiftAutoCellHeightUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA36B246DAD45D373EF30092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B899B91D70C5DA746E8186B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3F68B4D8B24F1A9EA3DF66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E49B2C5B0892F3FD368F996D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34C655AB1F6A6992000065DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C655B51F6A6992000065DD /* ViewController.swift in Sources */,
+				34F976521F6BD3F800B2D363 /* Workplace.swift in Sources */,
+				34F976551F6BD41100B2D363 /* Watermark.swift in Sources */,
+				34C656241F6A89C0000065DD /* Logo.swift in Sources */,
+				34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */,
+				34C655E11F6A6A2C000065DD /* AutoMHTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C655BF1F6A6993000065DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C655C81F6A6993000065DD /* SwiftAutoCellHeightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C655CA1F6A6993000065DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C655D31F6A6993000065DD /* SwiftAutoCellHeightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34C655C51F6A6993000065DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34C655AE1F6A6992000065DD /* SwiftAutoCellHeight */;
+			targetProxy = 34C655C41F6A6993000065DD /* PBXContainerItemProxy */;
+		};
+		34C655D01F6A6993000065DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34C655AE1F6A6992000065DD /* SwiftAutoCellHeight */;
+			targetProxy = 34C655CF1F6A6993000065DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34C655B61F6A6992000065DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34C655B71F6A6992000065DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34C655BB1F6A6992000065DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34C655BC1F6A6992000065DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34C655D51F6A6993000065DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34C655D61F6A6993000065DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34C655D81F6A6993000065DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B78E13522598AEA464AFC0 /* Pods-SwiftAutoCellHeight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7QT42R489Z;
+				INFOPLIST_FILE = SwiftAutoCellHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34C655D91F6A6993000065DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C453CB2FF1F69AC9C4FBE5 /* Pods-SwiftAutoCellHeight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7QT42R489Z;
+				INFOPLIST_FILE = SwiftAutoCellHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		34C655DB1F6A6993000065DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BACC1D560D3D178786B1BC /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftAutoCellHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAutoCellHeight.app/SwiftAutoCellHeight";
+			};
+			name = Debug;
+		};
+		34C655DC1F6A6993000065DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C524029E4BA6E9A57AB5284 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftAutoCellHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAutoCellHeight.app/SwiftAutoCellHeight";
+			};
+			name = Release;
+		};
+		34C655DE1F6A6993000065DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F29298B9552D9E290DEAE9 /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SwiftAutoCellHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwiftAutoCellHeight;
+			};
+			name = Debug;
+		};
+		34C655DF1F6A6993000065DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C104101131095F7DBC562D /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SwiftAutoCellHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwiftAutoCellHeight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34C655AA1F6A6992000065DD /* Build configuration list for PBXProject "SwiftAutoCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C655D51F6A6993000065DD /* Debug */,
+				34C655D61F6A6993000065DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C655D71F6A6993000065DD /* Build configuration list for PBXNativeTarget "SwiftAutoCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C655D81F6A6993000065DD /* Debug */,
+				34C655D91F6A6993000065DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C655DA1F6A6993000065DD /* Build configuration list for PBXNativeTarget "SwiftAutoCellHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C655DB1F6A6993000065DD /* Debug */,
+				34C655DC1F6A6993000065DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C655DD1F6A6993000065DD /* Build configuration list for PBXNativeTarget "SwiftAutoCellHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C655DE1F6A6993000065DD /* Debug */,
+				34C655DF1F6A6993000065DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34C655A71F6A6992000065DD /* Project object */;
+}
