@@ -4,7 +4,7 @@ OC + Swift 双版本实现动态列表 UITableView 数据加载及 cell 动态�
 ---
 ![](https://img.shields.io/badge/platform-iOS-red.svg) 
 ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
-![](https://img.shields.io/badge/download-791K-brightgreen.svg)
+![](https://img.shields.io/badge/download-8.2MB-brightgreen.svg)
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
 集中管理 TableView Data ，适用于暂时固定的类表结构，页面跳转由 Runtime 的类方法实现（和 storyboard 动态跳转），适合对列表数据排序变动的情况。
