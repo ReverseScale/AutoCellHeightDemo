@@ -39,10 +39,10 @@ class ViewController: UIViewController {
     
     func openDetailView(type:String){
         
-//            let cls: AnyClass = NSClassFromString("SwiftAutoCellHeight" + "." + type)!
-//            self.navigationController?.pushViewController(cls, animated: true)
-        
-        self.performSegue(withIdentifier:type, sender: self)
+        let vc:UIViewController = (NSClassFromString("SwiftAutoCellHeight."+type) as! UIViewController.Type).init()
+        self.navigationController?.pushViewController(vc, animated: true)
+
+//        self.performSegue(withIdentifier:type, sender: self)
     }
 
 
@@ -103,6 +103,21 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         let titleKey = (arrayList[indexPath.section] as! NSArray)
         let tky = titleKey[indexPath.row]
         openDetailView(type: tky as! String)
+    }
+}
+
+
+extension NSObject {
+    // create a static method to get a swift class for a string name
+    class func swiftClassFromString(className: String) -> AnyClass! {
+        // get the project name
+        if  let appName: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? {
+            // generate the full name of your class (take a look into your "YourProject-swift.h" file)
+            let classStringName = "_TtC\(appName)\(appName)\(className)"
+            // return the class!
+            return NSClassFromString(classStringName)
+        }
+        return nil;
     }
 }
 

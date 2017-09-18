@@ -12,7 +12,8 @@ class Logo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.white
+        self.title = "Logo"
         // Do any additional setup after loading the view.
     }
 
