@@ -8,17 +8,41 @@
 
 import UIKit
 
+let customcellIdentifier:String = "customcell"
+
 class ViewController: UIViewController {
     var arrayList = NSArray()
     var titleDic = NSDictionary()
     var picDic = NSDictionary()
     
-    lazy var tableView :UITableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), style: UITableViewStyle.grouped)
-
+    
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), style: UITableViewStyle.grouped)
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.register(AutoMHTableViewCell.self , forCellReuseIdentifier: customcellIdentifier)
+        
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        arrangeData()
+        self.view.addSubview(tableView)
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+// MARK: - Data
+    func arrangeData() {
         arrayList = [
             ["Logo","Workplace"],
             ["Watermark"]
@@ -26,68 +50,54 @@ class ViewController: UIViewController {
         titleDic = [
             "Logo":"GAVTH is a design & development studio.",
             "Workplace":"Definition of GAVTH in old language is deep pit. The logotype, in fact, composed exclusively of contour and curved lines that inspired from topographic lines. The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet.",
-            "Watermark":"Definition of GAVTH in old language is deep pit. The logotype, in fact, composed exclusively of contour and curved lines that inspired from topographic lines."
-            ]
+            "Watermark":"The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet."
+        ]
         picDic = [
             "Logo":"Icon.png",
             "Workplace":"PicImg.png",
             "Watermark":"PicText.png"
-            ]
-        
-        setupUI()
+        ]
     }
-    
-    func openDetailView(type:String){
-        
+
+    func openDetailView(type:String) {
         let vc:UIViewController = (NSClassFromString("SwiftAutoCellHeight."+type) as! UIViewController.Type).init()
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
+        //storyboard 跳转
 //        self.performSegue(withIdentifier:type, sender: self)
     }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func updateViewConstraints() {
+        
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+        
+        
+        
+        super.updateViewConstraints()
     }
 }
-// MARK:- 设置UI
-extension ViewController {
-    func setupUI() {
-        
-        self.view.addSubview(tableView)
-        
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        tableView.register(AutoMHTableViewCell.self , forCellReuseIdentifier: "cell")
-        
-        tableView.estimatedRowHeight = 44
-        tableView.rowHeight = UITableViewAutomaticDimension
-    }
-}
+
 // MARK:- UITableView的代理方法
 //extension：类扩展只能扩充方法，不能扩充属性
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return arrayList.count
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (arrayList[section] as AnyObject).count
     }
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01
     }
-    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:"cell") as! AutoMHTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:customcellIdentifier) as! AutoMHTableViewCell
         cell.selectionStyle = .none
         
         let titleKey = (arrayList[indexPath.section] as! NSArray)
@@ -99,25 +109,10 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let titleKey = (arrayList[indexPath.section] as! NSArray)
         let tky = titleKey[indexPath.row]
         openDetailView(type: tky as! String)
     }
 }
-
-
-extension NSObject {
-    // create a static method to get a swift class for a string name
-    class func swiftClassFromString(className: String) -> AnyClass! {
-        // get the project name
-        if  let appName: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? {
-            // generate the full name of your class (take a look into your "YourProject-swift.h" file)
-            let classStringName = "_TtC\(appName)\(appName)\(className)"
-            // return the class!
-            return NSClassFromString(classStringName)
-        }
-        return nil;
-    }
-}
-
