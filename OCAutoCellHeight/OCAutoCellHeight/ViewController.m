@@ -59,9 +59,8 @@
     return [[self.arrayList objectAtIndex:section] count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [self systemTableView:tableView cellForRowAtIndexPath:indexPath];
-
-//    return [self customCodeTableView:tableView cellForRowAtIndexPath:indexPath];
+//    return [self systemTableView:tableView cellForRowAtIndexPath:indexPath];
+    return [self customCodeTableView:tableView cellForRowAtIndexPath:indexPath];
 }
     
 #pragma mark - View

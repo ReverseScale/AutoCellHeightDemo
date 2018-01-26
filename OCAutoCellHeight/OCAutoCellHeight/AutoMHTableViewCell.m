@@ -18,18 +18,15 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-    
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupUI];
     }
     return self;
 }
-
 
 - (void)setupUI{
     //标题 【重点】必须在创建第一块控件的时候约束：contentView
@@ -75,7 +72,28 @@
         make.left.equalTo(self.contentView).with.offset(10);
         make.bottom.equalTo(self.contentView).with.offset(-10);
     }];
+//    [self updateConstraints];
 }
+
+//- (void)updateConstraints {
+//    [self.labeltitle mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.contentView.mas_top).with.offset(15);
+//        make.left.equalTo(self.contentView).with.offset(10);
+//        make.right.equalTo(self.contentView).with.offset(-10);
+//    }];
+//
+//    [self.pictureView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.labeltitle.mas_bottom).with.offset(20);
+//    }];
+//
+//    [self.labelContont mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.pictureView.mas_bottom).with.offset(20);
+//        make.left.equalTo(self.contentView).with.offset(10);
+//        make.bottom.equalTo(self.contentView).with.offset(-10);
+//    }];
+//
+//    [super updateConstraints];
+//}
 
 - (void)Actionbutton{
     NSLog(@"点击了内容");

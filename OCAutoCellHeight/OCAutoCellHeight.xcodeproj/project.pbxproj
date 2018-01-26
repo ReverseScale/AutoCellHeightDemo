@@ -148,7 +148,7 @@
 				34C655711F6A5863000065DD /* ViewController.m */,
 				34C6559D1F6A5B55000065DD /* AutoMHTableViewCell.h */,
 				34C6559E1F6A5B55000065DD /* AutoMHTableViewCell.m */,
-				34C655EC1F6A805E000065DD /* DetailViews */,
+				34C655EC1F6A805E000065DD /* DetailController */,
 				34C655A01F6A5E0C000065DD /* Icon.png */,
 				34C655A21F6A64F2000065DD /* PicText.png */,
 				34C655A31F6A64F2000065DD /* PicImg.png */,
@@ -187,7 +187,7 @@
 			path = OCAutoCellHeightUITests;
 			sourceTree = "<group>";
 		};
-		34C655EC1F6A805E000065DD /* DetailViews */ = {
+		34C655EC1F6A805E000065DD /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
 				34C655ED1F6A806D000065DD /* Logo.h */,
@@ -200,7 +200,7 @@
 				34C655F61F6A808B000065DD /* Watermark.m */,
 				34C655F71F6A808B000065DD /* Watermark.xib */,
 			);
-			path = DetailViews;
+			path = DetailController;
 			sourceTree = "<group>";
 		};
 		6AD24E116AC5E9D2FBE3AFED /* Frameworks */ = {
