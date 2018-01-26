@@ -10,7 +10,16 @@
 #import <Masonry.h>
 
 @implementation AutoMHTableViewCell
-
+    
+/*
+ * 返回 YES 系统调用 updateConstraints
+ * 或者
+ * 在外调用 [cell setNeedsUpdateConstraints];
+ */
+//+ (BOOL)requiresConstraintBasedLayout {
+//    return YES;
+//}
+    
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -26,6 +35,10 @@
         [self setupUI];
     }
     return self;
+}
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    //frame
 }
 
 - (void)setupUI{
@@ -53,47 +66,32 @@
     self.labelContont.textAlignment = NSTextAlignmentLeft;
     self.labelContont.numberOfLines = 0;
     self.labelContont.userInteractionEnabled = YES;
+    
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Actionbutton)];
     [self.labelContont addGestureRecognizer:tap];
     [self.contentView addSubview:_labelContont];
-    
+}
+
+- (void)updateConstraints {
     [self.labeltitle mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView.mas_top).with.offset(15);
         make.left.equalTo(self.contentView).with.offset(10);
         make.right.equalTo(self.contentView).with.offset(-10);
     }];
-    
+
     [self.pictureView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.labeltitle.mas_bottom).with.offset(20);
     }];
-    
+
     [self.labelContont mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.pictureView.mas_bottom).with.offset(20);
         make.left.equalTo(self.contentView).with.offset(10);
-        make.bottom.equalTo(self.contentView).with.offset(-10);
+        make.right.equalTo(self.contentView).with.offset(-10);
+        make.bottom.equalTo(self.contentView).with.offset(-20);
     }];
-//    [self updateConstraints];
-}
 
-//- (void)updateConstraints {
-//    [self.labeltitle mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.contentView.mas_top).with.offset(15);
-//        make.left.equalTo(self.contentView).with.offset(10);
-//        make.right.equalTo(self.contentView).with.offset(-10);
-//    }];
-//
-//    [self.pictureView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.labeltitle.mas_bottom).with.offset(20);
-//    }];
-//
-//    [self.labelContont mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.pictureView.mas_bottom).with.offset(20);
-//        make.left.equalTo(self.contentView).with.offset(10);
-//        make.bottom.equalTo(self.contentView).with.offset(-10);
-//    }];
-//
-//    [super updateConstraints];
-//}
+    [super updateConstraints];
+}
 
 - (void)Actionbutton{
     NSLog(@"点击了内容");

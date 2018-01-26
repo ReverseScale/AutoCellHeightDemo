@@ -24,8 +24,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.view addSubview:self.tableView];
+    
     [self arrangeData];
-    [self tableView];
+    
+    [self updateViewConstraints];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -87,6 +90,9 @@
         cell.labeltitle.text = titleKey;
         cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
         cell.labelContont.text =self.titleDic[titleKey];
+        
+        [cell setNeedsUpdateConstraints]; //系统调用updateConstraints
+        [cell updateConstraintsIfNeeded]; //立即触发约束更新，自动更新布局
     }
     return cell;
 }
@@ -106,8 +112,6 @@
         _tableView.dataSource = self;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        [self.view addSubview:_tableView];
-        
         _tableView.rowHeight = UITableViewAutomaticDimension;
         _tableView.estimatedRowHeight = 44;
         
