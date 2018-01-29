@@ -65,6 +65,12 @@
 //    return [self systemTableView:tableView cellForRowAtIndexPath:indexPath];
     return [self customCodeTableView:tableView cellForRowAtIndexPath:indexPath];
 }
+
+#pragma mark - UITableView Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
+    [self openDetailView:titleKey];
+}
     
 #pragma mark - View
 /// 系统级
@@ -95,12 +101,6 @@
         [cell updateConstraintsIfNeeded]; //立即触发约束更新，自动更新布局
     }
     return cell;
-}
-    
-#pragma mark - UITableView Delegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
-    [self openDetailView:titleKey];
 }
 
 #pragma mark - Lazy

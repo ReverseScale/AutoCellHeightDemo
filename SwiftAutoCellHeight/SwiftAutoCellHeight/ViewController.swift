@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var picDic = NSDictionary()
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableViewStyle.grouped)
+        let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.grouped)
 
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.delegate = self
@@ -109,6 +109,9 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         cell.labelTitle.text = tky as? String
         cell.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
         cell.labelContronter.text = self.titleDic[tky] as? String
+        
+        cell.setNeedsUpdateConstraints()//系统调用updateConstraints
+        cell.updateConstraintsIfNeeded()//立即触发约束更新，自动更新布局
         
         return cell
     }

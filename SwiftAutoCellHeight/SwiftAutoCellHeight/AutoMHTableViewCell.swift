@@ -16,7 +16,7 @@ class AutoMHTableViewCell: UITableViewCell {
     let imagePhone = UIImageView()
     //内容
     let labelContronter = UILabel()
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,6 +39,11 @@ class AutoMHTableViewCell: UITableViewCell {
         self.InitUI()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        //frame
+    }
+    
     
     fileprivate func InitUI(){
         labelTitle.numberOfLines = 0
@@ -57,9 +62,9 @@ class AutoMHTableViewCell: UITableViewCell {
         let tapGesture = UITapGestureRecognizer(target: self, action:#selector(Actionbuton))
         labelContronter.addGestureRecognizer(tapGesture)
         contentView.addSubview(labelContronter)
-        
-        
-        
+    }
+    
+    override func updateConstraints() {
         labelTitle.snp.makeConstraints { (make) in
             make.top.equalTo(contentView).offset(10)
             make.left.equalTo(10)
@@ -74,6 +79,7 @@ class AutoMHTableViewCell: UITableViewCell {
             make.right.equalTo(-10)
             make.bottom.equalTo(contentView).offset(-20)
         }
+        super.updateConstraints()
     }
     func Actionbuton() {
         print("点击了label")
