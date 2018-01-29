@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var picDic = NSDictionary()
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.grouped)
+        let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.plain)
 
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.delegate = self
@@ -46,6 +46,10 @@ class ViewController: UIViewController {
 // MARK: - Data
     func arrangeData() {
         arrayList = [
+            ["Logo","Workplace"],
+            ["Watermark"],
+            ["Logo","Workplace"],
+            ["Watermark"],
             ["Logo","Workplace"],
             ["Watermark"]
         ]
@@ -100,12 +104,37 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         return (arrayList[section] as AnyObject).count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        return self.systemTableView(tableView, cellForRowAt: indexPath)
+//        return self.customCodeTableView(tableView, cellForRowAt: indexPath)
+        return self.customXIBTableView(tableView, cellForRowAt: indexPath)
+    }
+    //Delegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let titleKey = (arrayList[indexPath.section] as! NSArray)
+        let tky = titleKey[indexPath.row]
+        openDetailView(type: tky as! String)
+    }
+}
+extension ViewController {
+    /// 系统级
+    func systemTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "systemcell")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "systemcell")
+        }
+        let titleKey = (arrayList[indexPath.section] as! NSArray)
+        let tky = titleKey[indexPath.row]
+        cell?.textLabel?.text = tky as? String
+        return cell ?? UITableViewCell()
+    }
+    /// 纯代码自定义 Cell
+    func customCodeTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:customcellIdentifier) as! AutoMHTableViewCell
         cell.selectionStyle = .none
         
         let titleKey = (arrayList[indexPath.section] as! NSArray)
         let tky = titleKey[indexPath.row]
-
+        
         cell.labelTitle.text = tky as? String
         cell.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
         cell.labelContronter.text = self.titleDic[tky] as? String
@@ -115,10 +144,39 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    //Delegate
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /// XIB自定义 Cell
+    func customXIBTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifierhot = "XIBTableViewCell"
+        
+        //重用写法
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? XIBTableViewCell
+        if cell == nil {
+            tableView.register(UINib(nibName: identifierhot, bundle: nil), forCellReuseIdentifier: identifierhot)
+            cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? XIBTableViewCell
+            tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        }
+
         let titleKey = (arrayList[indexPath.section] as! NSArray)
         let tky = titleKey[indexPath.row]
-        openDetailView(type: tky as! String)
+        
+        cell?.labelTitle.text = tky as? String
+        cell?.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
+        cell?.labelContronter.text = self.titleDic[tky] as? String
+        
+        // 防止重用写法
+//        var cell = tableView.cellForRow(at: indexPath) as? XIBTableViewCell
+//        if cell == nil {
+//            cell = Bundle.main.loadNibNamed(identifierhot, owner: self, options: nil)?.last as? XIBTableViewCell
+//            tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+//        }
+//
+//        let titleKey = (arrayList[indexPath.section] as! NSArray)
+//        let tky = titleKey[indexPath.row]
+//
+//        cell?.labelTitle.text = tky as? String
+//        cell?.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
+//        cell?.labelContronter.text = self.titleDic[tky] as? String
+        
+        return cell!
     }
 }

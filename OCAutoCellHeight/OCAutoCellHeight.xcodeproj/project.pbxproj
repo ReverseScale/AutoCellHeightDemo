@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A37C74201EC2E80039175F /* XIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C72201EC2E80039175F /* XIBTableViewCell.m */; };
+		34A37C75201EC2E80039175F /* XIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A37C73201EC2E80039175F /* XIBTableViewCell.xib */; };
+		34A37C7C201EE6BC0039175F /* UIImage+RadiusCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C7B201EE6BC0039175F /* UIImage+RadiusCorner.m */; };
 		34C6556C1F6A5863000065DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C6556B1F6A5863000065DD /* main.m */; };
 		34C6556F1F6A5863000065DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C6556E1F6A5863000065DD /* AppDelegate.m */; };
 		34C655721F6A5863000065DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C655711F6A5863000065DD /* ViewController.m */; };
@@ -48,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34A37C71201EC2E80039175F /* XIBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XIBTableViewCell.h; sourceTree = "<group>"; };
+		34A37C72201EC2E80039175F /* XIBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBTableViewCell.m; sourceTree = "<group>"; };
+		34A37C73201EC2E80039175F /* XIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBTableViewCell.xib; sourceTree = "<group>"; };
+		34A37C7A201EE6BC0039175F /* UIImage+RadiusCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RadiusCorner.h"; sourceTree = "<group>"; };
+		34A37C7B201EE6BC0039175F /* UIImage+RadiusCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RadiusCorner.m"; sourceTree = "<group>"; };
 		34C655671F6A5863000065DD /* OCAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C6556B1F6A5863000065DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34C6556D1F6A5863000065DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +156,11 @@
 				34C655711F6A5863000065DD /* ViewController.m */,
 				34C6559D1F6A5B55000065DD /* AutoMHTableViewCell.h */,
 				34C6559E1F6A5B55000065DD /* AutoMHTableViewCell.m */,
+				34A37C71201EC2E80039175F /* XIBTableViewCell.h */,
+				34A37C72201EC2E80039175F /* XIBTableViewCell.m */,
+				34A37C73201EC2E80039175F /* XIBTableViewCell.xib */,
+				34A37C7A201EE6BC0039175F /* UIImage+RadiusCorner.h */,
+				34A37C7B201EE6BC0039175F /* UIImage+RadiusCorner.m */,
 				34C655EC1F6A805E000065DD /* DetailController */,
 				34C655A01F6A5E0C000065DD /* Icon.png */,
 				34C655A21F6A64F2000065DD /* PicText.png */,
@@ -345,6 +358,7 @@
 				34C655A11F6A5E0C000065DD /* Icon.png in Resources */,
 				34C6557A1F6A5863000065DD /* LaunchScreen.storyboard in Resources */,
 				34C655FE1F6A8099000065DD /* Workplace.xib in Resources */,
+				34A37C75201EC2E80039175F /* XIBTableViewCell.xib in Resources */,
 				34C655771F6A5863000065DD /* Assets.xcassets in Resources */,
 				34C655751F6A5863000065DD /* Main.storyboard in Resources */,
 				34C655F91F6A808B000065DD /* Watermark.xib in Resources */,
@@ -516,7 +530,9 @@
 				34C655F01F6A806D000065DD /* Logo.m in Sources */,
 				34C655721F6A5863000065DD /* ViewController.m in Sources */,
 				34C6559F1F6A5B55000065DD /* AutoMHTableViewCell.m in Sources */,
+				34A37C74201EC2E80039175F /* XIBTableViewCell.m in Sources */,
 				34C6556F1F6A5863000065DD /* AppDelegate.m in Sources */,
+				34A37C7C201EE6BC0039175F /* UIImage+RadiusCorner.m in Sources */,
 				34C655FD1F6A8099000065DD /* Workplace.m in Sources */,
 				34C655F81F6A808B000065DD /* Watermark.m in Sources */,
 				34C6556C1F6A5863000065DD /* main.m in Sources */,

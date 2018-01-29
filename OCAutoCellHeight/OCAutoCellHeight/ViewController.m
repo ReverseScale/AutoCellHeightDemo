@@ -10,6 +10,7 @@
 #import <Masonry.h>
 
 #import "AutoMHTableViewCell.h"
+#import "XIBTableViewCell.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -28,6 +29,8 @@
     
     [self arrangeData];
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"XIBTableViewCell" bundle:nil] forCellReuseIdentifier:@"XIBTableViewCell"];
+    
     [self updateViewConstraints];
 }
 - (void)didReceiveMemoryWarning {
@@ -37,7 +40,7 @@
 
 #pragma mark - Data
 - (void)arrangeData {
-    self.arrayList = @[@[@"Logo", @"Workplace"], @[@"Watermark"]];
+    self.arrayList = @[@[@"Logo", @"Workplace"], @[@"Watermark"],@[@"Logo", @"Workplace"], @[@"Watermark"],@[@"Logo", @"Workplace"], @[@"Watermark"]];
     
     self.titleDic = @{@"Logo":@"GAVTH is a design & development studio.",
                       @"Workplace":@"Definition of GAVTH in old language is deep pit. The logotype, in fact, composed exclusively of contour and curved lines that inspired from topographic lines. The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet.",
@@ -63,7 +66,8 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    return [self systemTableView:tableView cellForRowAtIndexPath:indexPath];
-    return [self customCodeTableView:tableView cellForRowAtIndexPath:indexPath];
+//    return [self customCodeTableView:tableView cellForRowAtIndexPath:indexPath];
+    return [self customXIBTableView:tableView cellForRowAtIndexPath:indexPath];
 }
 
 #pragma mark - UITableView Delegate
@@ -91,15 +95,54 @@
         cell = [[AutoMHTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifierhot];
         /* 忽略点击效果 */
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        
-        NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
-        cell.labeltitle.text = titleKey;
-        cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
-        cell.labelContont.text =self.titleDic[titleKey];
-        
-        [cell setNeedsUpdateConstraints]; //系统调用updateConstraints
-        [cell updateConstraintsIfNeeded]; //立即触发约束更新，自动更新布局
     }
+    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
+    cell.labeltitle.text = titleKey;
+    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
+    cell.labelContont.text = self.titleDic[titleKey];
+    
+    [cell setNeedsUpdateConstraints]; //系统调用updateConstraints
+    [cell updateConstraintsIfNeeded]; //立即触发约束更新，自动更新布局
+    return cell;
+}
+/// XIB自定义 Cell
+- (UITableViewCell *)customXIBTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identifierhot = @"XIBTableViewCell";
+
+    //重用写法一
+//    XIBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierhot forIndexPath:indexPath];
+//    if (cell == nil)  {
+//        cell = [[[NSBundle mainBundle]loadNibNamed:identifierhot owner:self options:nil]lastObject];
+//        tableView.separatorStyle = NO;
+//    }
+//    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
+//    cell.labeltitle.text = titleKey;
+//    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
+//    cell.labelContont.text = self.titleDic[titleKey];
+    
+    //重用写法二
+    XIBTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifierhot];
+    if(!cell)  {
+        [tableView registerNib:[UINib nibWithNibName:identifierhot bundle:nil] forCellReuseIdentifier:identifierhot];
+        cell = [tableView dequeueReusableCellWithIdentifier:identifierhot];
+        tableView.separatorStyle = NO;
+    }
+    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
+    cell.labeltitle.text = titleKey;
+    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
+    cell.labelContont.text = self.titleDic[titleKey];
+
+    // 防止重用写法
+//    XIBTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    if (cell == nil)  {
+//        cell = (XIBTableViewCell *)[[[NSBundle  mainBundle] loadNibNamed:identifierhot owner:self options:nil] lastObject];
+//        tableView.separatorStyle = NO;
+//    }
+//    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
+//    cell.labeltitle.text = titleKey;
+//    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
+//    cell.labelContont.text =self.titleDic[titleKey];
+    
     return cell;
 }
 

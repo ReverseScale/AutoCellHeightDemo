@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="XIBTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="296" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PicImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="dNR-s8-AlC">
+                        <rect key="frame" x="16" y="11" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="T7l-Iw-QCR"/>
+                            <constraint firstAttribute="width" constant="60" id="iFm-wJ-73L"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="PLNAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRS-6Q-SGg">
+                        <rect key="frame" x="84" y="19" width="54" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" priority="250" constant="21" id="RQL-qT-hWb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Augmented Reality Dimensioning Demo Reality Dimensioning Demo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coK-ML-DwN">
+                        <rect key="frame" x="84" y="39.5" width="212" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dNR-s8-AlC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="34q-rY-tPO"/>
+                    <constraint firstItem="DRS-6Q-SGg" firstAttribute="top" secondItem="dNR-s8-AlC" secondAttribute="top" constant="8" id="Afg-ut-8nJ"/>
+                    <constraint firstAttribute="trailing" secondItem="coK-ML-DwN" secondAttribute="trailing" id="Daa-Ow-DyT"/>
+                    <constraint firstItem="coK-ML-DwN" firstAttribute="top" secondItem="DRS-6Q-SGg" secondAttribute="bottom" id="UV1-Ca-oJk"/>
+                    <constraint firstItem="dNR-s8-AlC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XX3-Vg-CXQ"/>
+                    <constraint firstItem="coK-ML-DwN" firstAttribute="leading" secondItem="DRS-6Q-SGg" secondAttribute="leading" id="ss2-Fr-vhu"/>
+                    <constraint firstAttribute="bottom" secondItem="coK-ML-DwN" secondAttribute="bottom" id="ueh-a9-3ZS"/>
+                    <constraint firstItem="DRS-6Q-SGg" firstAttribute="leading" secondItem="dNR-s8-AlC" secondAttribute="trailing" constant="8" id="wUB-nA-G4A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="labelContont" destination="coK-ML-DwN" id="Df5-aY-jFe"/>
+                <outlet property="labeltitle" destination="DRS-6Q-SGg" id="FjG-EF-vHU"/>
+                <outlet property="pictureView" destination="dNR-s8-AlC" id="c18-oa-dG5"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="185"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PicImg.png" width="214" height="152"/>
+    </resources>
+</document>

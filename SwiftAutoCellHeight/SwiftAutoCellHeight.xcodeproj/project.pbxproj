@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0CC468E955E92E7024D3CD59 /* Pods_SwiftAutoCellHeightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707785B22BFF5248BFD8D58E /* Pods_SwiftAutoCellHeightTests.framework */; };
+		34A37C78201EC88C0039175F /* XIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C76201EC88C0039175F /* XIBTableViewCell.swift */; };
+		34A37C79201EC88C0039175F /* XIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A37C77201EC88C0039175F /* XIBTableViewCell.xib */; };
+		34A37C7E201EE81F0039175F /* RadiusCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C7D201EE81F0039175F /* RadiusCorner.swift */; };
 		34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B21F6A6992000065DD /* AppDelegate.swift */; };
 		34C655B51F6A6992000065DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B41F6A6992000065DD /* ViewController.swift */; };
 		34C655B81F6A6992000065DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655B61F6A6992000065DD /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		31B78E13522598AEA464AFC0 /* Pods-SwiftAutoCellHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		34A37C76201EC88C0039175F /* XIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBTableViewCell.swift; sourceTree = "<group>"; };
+		34A37C77201EC88C0039175F /* XIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBTableViewCell.xib; sourceTree = "<group>"; };
+		34A37C7D201EE81F0039175F /* RadiusCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusCorner.swift; sourceTree = "<group>"; };
 		34C655AF1F6A6992000065DD /* SwiftAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C655B21F6A6992000065DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C655B41F6A6992000065DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +147,9 @@
 				34C655B21F6A6992000065DD /* AppDelegate.swift */,
 				34C655B41F6A6992000065DD /* ViewController.swift */,
 				34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */,
+				34A37C76201EC88C0039175F /* XIBTableViewCell.swift */,
+				34A37C77201EC88C0039175F /* XIBTableViewCell.xib */,
+				34A37C7D201EE81F0039175F /* RadiusCorner.swift */,
 				34A37C70201EC0540039175F /* DetailController */,
 				34C655E31F6A75D2000065DD /* Icon.png */,
 				34C655E41F6A75D2000065DD /* PicText.png */,
@@ -316,6 +325,7 @@
 				34C655BA1F6A6992000065DD /* Assets.xcassets in Resources */,
 				34C655B81F6A6992000065DD /* Main.storyboard in Resources */,
 				34C655E81F6A75D2000065DD /* PicImg.png in Resources */,
+				34A37C79201EC88C0039175F /* XIBTableViewCell.xib in Resources */,
 				34C655E71F6A75D2000065DD /* PicText.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +494,8 @@
 				34F976551F6BD41100B2D363 /* Watermark.swift in Sources */,
 				34C656241F6A89C0000065DD /* Logo.swift in Sources */,
 				34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */,
+				34A37C78201EC88C0039175F /* XIBTableViewCell.swift in Sources */,
+				34A37C7E201EE81F0039175F /* RadiusCorner.swift in Sources */,
 				34C655E11F6A6A2C000065DD /* AutoMHTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
