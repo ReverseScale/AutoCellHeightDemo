@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     var titleDic = NSDictionary()
     var picDic = NSDictionary()
     
-    
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), style: UITableViewStyle.grouped)
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableViewStyle.grouped)
+
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         
         arrangeData()
         self.view.addSubview(tableView)
+        
+        updateViewConstraints()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,14 +70,20 @@ class ViewController: UIViewController {
     }
     
     override func updateViewConstraints() {
-        
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         } else {
             automaticallyAdjustsScrollViewInsets = false
         }
-        
-        
+        self.tableView.snp.makeConstraints { (make) in
+            if #available(iOS 11.0, *) {
+                make.top.equalTo(self.view.safeAreaLayoutGuide)
+                make.left.right.equalTo(self.view)
+                make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+            } else {
+                make.size.equalTo(self.view)
+                make.center.equalTo(self.view)
+            }}
         
         super.updateViewConstraints()
     }
@@ -84,17 +92,12 @@ class ViewController: UIViewController {
 // MARK:- UITableView的代理方法
 //extension：类扩展只能扩充方法，不能扩充属性
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
+    //DataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return arrayList.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (arrayList[section] as AnyObject).count
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.01
-    }
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.01
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:customcellIdentifier) as! AutoMHTableViewCell
@@ -109,7 +112,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
+    //Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let titleKey = (arrayList[indexPath.section] as! NSArray)
         let tky = titleKey[indexPath.row]
