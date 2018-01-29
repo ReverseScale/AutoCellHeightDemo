@@ -156,26 +156,23 @@ extension ViewController {
             tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         }
 
-        let titleKey = (arrayList[indexPath.section] as! NSArray)
-        let tky = titleKey[indexPath.row]
-        
-        cell?.labelTitle.text = tky as? String
-        cell?.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
-        cell?.labelContronter.text = self.titleDic[tky] as? String
-        
         // 防止重用写法
 //        var cell = tableView.cellForRow(at: indexPath) as? XIBTableViewCell
 //        if cell == nil {
 //            cell = Bundle.main.loadNibNamed(identifierhot, owner: self, options: nil)?.last as? XIBTableViewCell
 //            tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 //        }
-//
-//        let titleKey = (arrayList[indexPath.section] as! NSArray)
-//        let tky = titleKey[indexPath.row]
-//
-//        cell?.labelTitle.text = tky as? String
-//        cell?.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
-//        cell?.labelContronter.text = self.titleDic[tky] as? String
+        
+        let titleKey = (arrayList[indexPath.section] as! NSArray)
+        let tky = titleKey[indexPath.row]
+        
+        let modelAlg = Model()
+        modelAlg.title = tky as? String
+        modelAlg.picture = self.picDic[tky] as? String
+        modelAlg.label = self.titleDic[tky] as? String
+        
+        cell?.model = modelAlg
+
         
         return cell!
     }

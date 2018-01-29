@@ -11,6 +11,7 @@
 		34A37C78201EC88C0039175F /* XIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C76201EC88C0039175F /* XIBTableViewCell.swift */; };
 		34A37C79201EC88C0039175F /* XIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A37C77201EC88C0039175F /* XIBTableViewCell.xib */; };
 		34A37C7E201EE81F0039175F /* RadiusCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C7D201EE81F0039175F /* RadiusCorner.swift */; };
+		34A37C86201EF62C0039175F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C85201EF62C0039175F /* Model.swift */; };
 		34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B21F6A6992000065DD /* AppDelegate.swift */; };
 		34C655B51F6A6992000065DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B41F6A6992000065DD /* ViewController.swift */; };
 		34C655B81F6A6992000065DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655B61F6A6992000065DD /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		34A37C76201EC88C0039175F /* XIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBTableViewCell.swift; sourceTree = "<group>"; };
 		34A37C77201EC88C0039175F /* XIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBTableViewCell.xib; sourceTree = "<group>"; };
 		34A37C7D201EE81F0039175F /* RadiusCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusCorner.swift; sourceTree = "<group>"; };
+		34A37C85201EF62C0039175F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		34C655AF1F6A6992000065DD /* SwiftAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C655B21F6A6992000065DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C655B41F6A6992000065DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				34A37C76201EC88C0039175F /* XIBTableViewCell.swift */,
 				34A37C77201EC88C0039175F /* XIBTableViewCell.xib */,
 				34A37C7D201EE81F0039175F /* RadiusCorner.swift */,
+				34A37C85201EF62C0039175F /* Model.swift */,
 				34A37C70201EC0540039175F /* DetailController */,
 				34C655E31F6A75D2000065DD /* Icon.png */,
 				34C655E41F6A75D2000065DD /* PicText.png */,
@@ -489,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A37C86201EF62C0039175F /* Model.swift in Sources */,
 				34C655B51F6A6992000065DD /* ViewController.swift in Sources */,
 				34F976521F6BD3F800B2D363 /* Workplace.swift in Sources */,
 				34F976551F6BD41100B2D363 /* Watermark.swift in Sources */,

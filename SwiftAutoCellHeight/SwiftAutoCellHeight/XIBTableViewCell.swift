@@ -12,6 +12,14 @@ class XIBTableViewCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imagePhone: UIImageView!
     @IBOutlet weak var labelContronter: UILabel!
+    
+    var model = Model() {
+        didSet{
+            labelTitle.text = model.title
+            imagePhone.image = UIImage(named: model.picture!)
+            labelContronter.text = model.label
+        }
+    }
 
     /*
      * CALayer离屏渲染终极解决方案(OC版):

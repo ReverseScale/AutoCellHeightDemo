@@ -11,6 +11,7 @@
 
 #import "AutoMHTableViewCell.h"
 #import "XIBTableViewCell.h"
+#import "Model.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -115,10 +116,6 @@
 //        cell = [[[NSBundle mainBundle]loadNibNamed:identifierhot owner:self options:nil]lastObject];
 //        tableView.separatorStyle = NO;
 //    }
-//    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
-//    cell.labeltitle.text = titleKey;
-//    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
-//    cell.labelContont.text = self.titleDic[titleKey];
     
     //重用写法二
     XIBTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifierhot];
@@ -127,10 +124,6 @@
         cell = [tableView dequeueReusableCellWithIdentifier:identifierhot];
         tableView.separatorStyle = NO;
     }
-    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
-    cell.labeltitle.text = titleKey;
-    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
-    cell.labelContont.text = self.titleDic[titleKey];
 
     // 防止重用写法
 //    XIBTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -138,10 +131,15 @@
 //        cell = (XIBTableViewCell *)[[[NSBundle  mainBundle] loadNibNamed:identifierhot owner:self options:nil] lastObject];
 //        tableView.separatorStyle = NO;
 //    }
-//    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
-//    cell.labeltitle.text = titleKey;
-//    cell.pictureView.image = [UIImage imageNamed:self.picDic[titleKey]];
-//    cell.labelContont.text =self.titleDic[titleKey];
+
+    NSString *titleKey = self.arrayList[indexPath.section][indexPath.row];
+    
+    Model *modelAlg = [Model new];
+    modelAlg.title = titleKey;
+    modelAlg.picture = self.picDic[titleKey];
+    modelAlg.label = self.titleDic[titleKey];
+    
+    [cell setModel:modelAlg];
     
     return cell;
 }
