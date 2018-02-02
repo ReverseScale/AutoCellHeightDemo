@@ -1,0 +1,6 @@
+framework module Pods_SwiftAutoCellHeightUITests {
+  umbrella header "Pods-SwiftAutoCellHeightUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

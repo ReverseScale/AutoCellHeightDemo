@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0752736C1A1BD8C694D39AAA9D85D604 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DA246624787CFC6FA77FF2F1B30237 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CFEA1ABB8191E14BCE1086270EAFF7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		14E918183B3734CE95E696E09F56330A /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C3DF394CE5E92C0ADD53F355D0CC /* ConstraintMakerFinalizable.swift */; };
+		22AD85B79B851F6EF26251C2F7D8F3EC /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC30665F5851A91F53B06C1C5DB086F /* ConstraintMaker.swift */; };
+		250DC913E30B329554459CB816CCB979 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B293100C0290E65E0BC870B684749EE /* ConstraintInsets.swift */; };
+		264E945DB9A6F4BBC2124D52AE795E8B /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07029E1AB6B48844606B94F63C7D3 /* ConstraintView.swift */; };
+		26F336CF6AFAC67DE5D3C1CE5FC2ED41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		29100B6024CA3910875BB52492612361 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22B2BDC310B15F7DDC06B930A34C08 /* ConstraintViewDSL.swift */; };
+		320891BA7480529C095CCE1A7649DF46 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8146EFFBA522D816BA04C83EB0DF7B /* LayoutConstraint.swift */; };
+		378FCDF3D061C0798438A10DC3FBA8DE /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1CD2DEFFFFBE20323DBA9A34D77244 /* ConstraintLayoutGuideDSL.swift */; };
+		3EA18E49874880EA4970F8115BF5C916 /* Pods-SwiftAutoCellHeight-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A328444028CBA7BCC0A5B3755329FA /* Pods-SwiftAutoCellHeight-dummy.m */; };
+		3F25B0DB78E1F43A72657211CED862CB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB2E01187F1C611F313E97AF0FA73C9 /* SnapKit-dummy.m */; };
+		3F5C9F468AFD36AAC4D89CE1DE11D735 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462519E1C4775536E35556F3795C991 /* ConstraintLayoutSupport.swift */; };
+		48594764A3203D09978E9EC5B58D11B3 /* Pods-SwiftAutoCellHeightTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB9D8BCECC9AD180219FC2216A7DFC3 /* Pods-SwiftAutoCellHeightTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A2BB06487345A997B9447105EFD118 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13073B460DCA5A885901AEF7AB347371 /* ConstraintLayoutGuide.swift */; };
+		49A6F8A3A72F6797FFE624EF3556DF0F /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D41E08E365B8155DF32EB5D064DEBD /* ConstraintMultiplierTarget.swift */; };
+		4C439688CAD7509B2CA0A15548423E69 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B3F31044A960BEE2B4EA495062C50 /* LayoutConstraintItem.swift */; };
+		4CD03692EB6B8DF0628C3D41D253F07E /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542616B9ACD95DF820563AF6812054DB /* ConstraintView+Extensions.swift */; };
+		52ABC539FEE6CC736D695F41A914A483 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8312E198200C0AEA234E70043168A5 /* Debugging.swift */; };
+		59B7D231649B154AE781618388E7236B /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580BC912561D405845ED2A61C49CDBF /* ConstraintRelatableTarget.swift */; };
+		5C9369058D2D0E64E47E91471347D65D /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51CAB784598D20B25F8D8697936547 /* ConstraintPriority.swift */; };
+		5D42ACF6F377C3F96B44DD1FEB315E9C /* Pods-SwiftAutoCellHeightTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696C692E8F10C1380357163672B07 /* Pods-SwiftAutoCellHeightTests-dummy.m */; };
+		5D9BF489631F09542820DA32EA0D1613 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F49073113894FE292B3687B4ECB69 /* ConstraintLayoutSupportDSL.swift */; };
+		5DA870F10EFF218ABC90D587B5CFE44F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E88B541786D560F47EDA8B1F69331F /* ConstraintRelation.swift */; };
+		73035A4F67988E9F6ED62506860E2DD7 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593ADC9CCA6A730223A7A1761308569E /* ConstraintMakerExtendable.swift */; };
+		74FA5256813BFD706D784C77E47211BD /* Pods-SwiftAutoCellHeightUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 985A33A955CF9238941DDDB10C2C0F2D /* Pods-SwiftAutoCellHeightUITests-dummy.m */; };
+		7AE106833884756B5E96BA7B5885F485 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7D51E12631CD67464E874DF8B217B /* ConstraintMakerEditable.swift */; };
+		7C38AE33A8C9BB5D88014566FA146533 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A604DEAFF03D03BC699E72E10C67B71 /* ConstraintConfig.swift */; };
+		8771AEB7AC7EC16FA2FD57237ACA87C2 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FC83115BE318FE6323B0F9EFF8AD4E /* ConstraintInsetTarget.swift */; };
+		8F46D9E5D612258E289046B0D5B98A6C /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC80D101E67AAC55EB7A7DA474138F29 /* ConstraintDescription.swift */; };
+		940EA41E859B0E39CF5DB7E08CB51837 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C2911388ED349020316062C27A0552 /* ConstraintPriorityTarget.swift */; };
+		9476B8B91EB7A8F810223839C747FA0B /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFE805792598886FC384C0B0A3EF38 /* ConstraintDSL.swift */; };
+		A7FCCFCA1C8DCAD1BBE6190B642C5E22 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C2B9292B588439EC410BDD60AC4ED /* ConstraintMakerRelatable.swift */; };
+		BA25EF6B9BE03CC561B6A7C734A599CF /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECDB5C71A137EEEA16CEB2DD800330 /* ConstraintItem.swift */; };
+		BBFCF9A736FF60400B770B253A7BA037 /* Pods-SwiftAutoCellHeight-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDDB4B2AF2896601FC1D143D8DF91A82 /* Pods-SwiftAutoCellHeight-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1A3C60016895F0F69E6BA99BF5823FE /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC92430472C5AD046E7F861C0EA03C /* Constraint.swift */; };
+		C6F907397E930E15DB9496A811BC0089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CDC59D95C296181D2F9B8CFA83B3EDE9 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF82A6ACAA600E4D7DB0ED2CD8810552 /* UILayoutSupport+Extensions.swift */; };
+		D26B6D8EA0CEB439727118033799AE4E /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367805C3148DFB7993AC74CFD215DC2 /* ConstraintLayoutGuide+Extensions.swift */; };
+		D48B2DFBBEA1F131C68155C068BC8649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DC0006DB5A8A28E950D7B30D74D526D8 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9A2B12FAD5179289BD79BAC77D995 /* ConstraintConstantTarget.swift */; };
+		DC1AA7948183DA126CF39D4B4746D57A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869EE947ABEB849C41E6E2759CB73461 /* ConstraintMakerPriortizable.swift */; };
+		EE18AE678268A40B41465E912055A0EE /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EF9279D230438E1DF533F8BCBEC262 /* ConstraintOffsetTarget.swift */; };
+		F13122CB32FB9FF4D137BDF35C197818 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B1C84CB8B9ED6A88495862C479990 /* ConstraintAttributes.swift */; };
+		F2B5809BCDDDA87B9DDB6B44634CAF7F /* Pods-SwiftAutoCellHeightUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F216DD971A57ECFFD61B5F616C3820FD /* Pods-SwiftAutoCellHeightUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81A1E77584079E5CB7FD760241CA929C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0BF1F0A70196FE9BB4D7ABE86BE5623;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034E7C3763A04377074C0C64A9A8239B /* Pods_SwiftAutoCellHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftAutoCellHeight.framework; path = "Pods-SwiftAutoCellHeight.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C2911388ED349020316062C27A0552 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		0843C3DF394CE5E92C0ADD53F355D0CC /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		0A604DEAFF03D03BC699E72E10C67B71 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		0B0A453636C1F962DEEDAD9FD8D1FA51 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		12E88B541786D560F47EDA8B1F69331F /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		13073B460DCA5A885901AEF7AB347371 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		1A6BDB5F0FBCAC3506F22584473F6020 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206B3F7B26C29ABE40D3D335ADC23493 /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAutoCellHeightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		268A42F051E9A481565226CB5DDEE487 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29DA246624787CFC6FA77FF2F1B30237 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		2C0F49073113894FE292B3687B4ECB69 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		2E259F465A176E9F4761DB4BB85E624D /* Pods-SwiftAutoCellHeightTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftAutoCellHeightTests.modulemap"; sourceTree = "<group>"; };
+		359C2B9292B588439EC410BDD60AC4ED /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		37D41E08E365B8155DF32EB5D064DEBD /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		3BFFBAC507D53285E7809EF57B217605 /* Pods-SwiftAutoCellHeight-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAutoCellHeight-frameworks.sh"; sourceTree = "<group>"; };
+		421C773B81CF42F5366294549179B1CC /* Pods-SwiftAutoCellHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAutoCellHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		47502374DB954F117FC78CBCE457A36E /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAutoCellHeightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DDD6F4C09DE4EB9982F4EE46B1DB606 /* Pods-SwiftAutoCellHeightUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftAutoCellHeightUITests.modulemap"; sourceTree = "<group>"; };
+		50C267EF987FA2B2ED0BC1705BB11CB7 /* Pods-SwiftAutoCellHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAutoCellHeight.release.xcconfig"; sourceTree = "<group>"; };
+		53FEBCFDA4E17BC35E66708792E964D9 /* Pods-SwiftAutoCellHeightUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftAutoCellHeightUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		542616B9ACD95DF820563AF6812054DB /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		54B04DD12F6342C19E0EF6B3167130D3 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		56489AA6834773EC2A8DB65A2A435453 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAutoCellHeightTests.release.xcconfig"; sourceTree = "<group>"; };
+		593ADC9CCA6A730223A7A1761308569E /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		5EB9D8BCECC9AD180219FC2216A7DFC3 /* Pods-SwiftAutoCellHeightTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAutoCellHeightTests-umbrella.h"; sourceTree = "<group>"; };
+		62EF9279D230438E1DF533F8BCBEC262 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		646B1C84CB8B9ED6A88495862C479990 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		64AD8D70D843619005FD01220875F29F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F97C382DD66C738978AE0223A935CA /* Pods-SwiftAutoCellHeight-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftAutoCellHeight-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6580BC912561D405845ED2A61C49CDBF /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		666A08E3DD47E7BAC7E02FA049F20529 /* Pods-SwiftAutoCellHeightTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftAutoCellHeightTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67F4A23665FA32647D1B1F9C1758A90E /* Pods-SwiftAutoCellHeightUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAutoCellHeightUITests-resources.sh"; sourceTree = "<group>"; };
+		6A6B3F31044A960BEE2B4EA495062C50 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		6B293100C0290E65E0BC870B684749EE /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		6C1CD2DEFFFFBE20323DBA9A34D77244 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		6D51CAB784598D20B25F8D8697936547 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		6DECDB5C71A137EEEA16CEB2DD800330 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		73A328444028CBA7BCC0A5B3755329FA /* Pods-SwiftAutoCellHeight-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftAutoCellHeight-dummy.m"; sourceTree = "<group>"; };
+		7D8146EFFBA522D816BA04C83EB0DF7B /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		828B5A1D4E99C1A81A155A036F8FB8DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		869EE947ABEB849C41E6E2759CB73461 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		8A093742E0C2D2673D4E008F611BB03C /* Pods_SwiftAutoCellHeightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftAutoCellHeightTests.framework; path = "Pods-SwiftAutoCellHeightTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3E8C777F2EC70205E48C34977DCB17 /* Pods-SwiftAutoCellHeightTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAutoCellHeightTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DEC92430472C5AD046E7F861C0EA03C /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		8DEFE805792598886FC384C0B0A3EF38 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		919D44FF4B5E2279C8EF5CA0F73A1A2B /* Pods-SwiftAutoCellHeightUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAutoCellHeightUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9367805C3148DFB7993AC74CFD215DC2 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		985A33A955CF9238941DDDB10C2C0F2D /* Pods-SwiftAutoCellHeightUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftAutoCellHeightUITests-dummy.m"; sourceTree = "<group>"; };
+		9CB07029E1AB6B48844606B94F63C7D3 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		9D848195797BAF6975345BAE896E3A17 /* Pods-SwiftAutoCellHeightTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAutoCellHeightTests-resources.sh"; sourceTree = "<group>"; };
+		A1C162120133B463966B9CE23CFFEE4A /* Pods_SwiftAutoCellHeightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftAutoCellHeightUITests.framework; path = "Pods-SwiftAutoCellHeightUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F701DDD4AD92995A467A26CBA85F4A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A462519E1C4775536E35556F3795C991 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		ABC30665F5851A91F53B06C1C5DB086F /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		AE22B2BDC310B15F7DDC06B930A34C08 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		C4FA7F53A5673CD13C28E5164A7B4030 /* Pods-SwiftAutoCellHeightTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAutoCellHeightTests-frameworks.sh"; sourceTree = "<group>"; };
+		C727F996D1A58A048EC3C5B25268C472 /* Pods-SwiftAutoCellHeight.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftAutoCellHeight.modulemap"; sourceTree = "<group>"; };
+		C78D9100A663E6501F912089BC90230C /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		CFD7D51E12631CD67464E874DF8B217B /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		DA27A622B3B2894D0A80F388D09D05F4 /* Pods-SwiftAutoCellHeight-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAutoCellHeight-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC8312E198200C0AEA234E70043168A5 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		E5FC83115BE318FE6323B0F9EFF8AD4E /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		E69E7CBE826F6F8661FD56C5BAFA87E9 /* Pods-SwiftAutoCellHeight-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAutoCellHeight-resources.sh"; sourceTree = "<group>"; };
+		ECE9A2B12FAD5179289BD79BAC77D995 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		EF82A6ACAA600E4D7DB0ED2CD8810552 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		F0CA5EB623AD7EC78BD9056C2F9AD233 /* Pods-SwiftAutoCellHeightUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAutoCellHeightUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F216DD971A57ECFFD61B5F616C3820FD /* Pods-SwiftAutoCellHeightUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAutoCellHeightUITests-umbrella.h"; sourceTree = "<group>"; };
+		F82030A5EB884998AFF80F2E5E0464DE /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAutoCellHeightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA4696C692E8F10C1380357163672B07 /* Pods-SwiftAutoCellHeightTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftAutoCellHeightTests-dummy.m"; sourceTree = "<group>"; };
+		FC80D101E67AAC55EB7A7DA474138F29 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		FDB2E01187F1C611F313E97AF0FA73C9 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		FDDB4B2AF2896601FC1D143D8DF91A82 /* Pods-SwiftAutoCellHeight-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAutoCellHeight-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A8AE2C8B359210DDC03CC44506EA070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFEA1ABB8191E14BCE1086270EAFF7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494D4B395ABB6A524BFCA90D5838346C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F336CF6AFAC67DE5D3C1CE5FC2ED41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65139525550ADEF57C299F47825B4F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48B2DFBBEA1F131C68155C068BC8649 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EEEBB812E05D0289EC23CE573456F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F907397E930E15DB9496A811BC0089 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260C83DAAEA9D7295EA313A34728FE8B /* Pods-SwiftAutoCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				268A42F051E9A481565226CB5DDEE487 /* Info.plist */,
+				C727F996D1A58A048EC3C5B25268C472 /* Pods-SwiftAutoCellHeight.modulemap */,
+				64F97C382DD66C738978AE0223A935CA /* Pods-SwiftAutoCellHeight-acknowledgements.markdown */,
+				DA27A622B3B2894D0A80F388D09D05F4 /* Pods-SwiftAutoCellHeight-acknowledgements.plist */,
+				73A328444028CBA7BCC0A5B3755329FA /* Pods-SwiftAutoCellHeight-dummy.m */,
+				3BFFBAC507D53285E7809EF57B217605 /* Pods-SwiftAutoCellHeight-frameworks.sh */,
+				E69E7CBE826F6F8661FD56C5BAFA87E9 /* Pods-SwiftAutoCellHeight-resources.sh */,
+				FDDB4B2AF2896601FC1D143D8DF91A82 /* Pods-SwiftAutoCellHeight-umbrella.h */,
+				421C773B81CF42F5366294549179B1CC /* Pods-SwiftAutoCellHeight.debug.xcconfig */,
+				50C267EF987FA2B2ED0BC1705BB11CB7 /* Pods-SwiftAutoCellHeight.release.xcconfig */,
+			);
+			name = "Pods-SwiftAutoCellHeight";
+			path = "Target Support Files/Pods-SwiftAutoCellHeight";
+			sourceTree = "<group>";
+		};
+		5B7F736DBFA23AAD2A8374F9F51D73D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				034E7C3763A04377074C0C64A9A8239B /* Pods_SwiftAutoCellHeight.framework */,
+				8A093742E0C2D2673D4E008F611BB03C /* Pods_SwiftAutoCellHeightTests.framework */,
+				A1C162120133B463966B9CE23CFFEE4A /* Pods_SwiftAutoCellHeightUITests.framework */,
+				A2F701DDD4AD92995A467A26CBA85F4A /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		619C431FB9AFC7E8B32B366D42951112 /* Pods-SwiftAutoCellHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				64AD8D70D843619005FD01220875F29F /* Info.plist */,
+				2E259F465A176E9F4761DB4BB85E624D /* Pods-SwiftAutoCellHeightTests.modulemap */,
+				666A08E3DD47E7BAC7E02FA049F20529 /* Pods-SwiftAutoCellHeightTests-acknowledgements.markdown */,
+				8A3E8C777F2EC70205E48C34977DCB17 /* Pods-SwiftAutoCellHeightTests-acknowledgements.plist */,
+				FA4696C692E8F10C1380357163672B07 /* Pods-SwiftAutoCellHeightTests-dummy.m */,
+				C4FA7F53A5673CD13C28E5164A7B4030 /* Pods-SwiftAutoCellHeightTests-frameworks.sh */,
+				9D848195797BAF6975345BAE896E3A17 /* Pods-SwiftAutoCellHeightTests-resources.sh */,
+				5EB9D8BCECC9AD180219FC2216A7DFC3 /* Pods-SwiftAutoCellHeightTests-umbrella.h */,
+				206B3F7B26C29ABE40D3D335ADC23493 /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */,
+				56489AA6834773EC2A8DB65A2A435453 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */,
+			);
+			name = "Pods-SwiftAutoCellHeightTests";
+			path = "Target Support Files/Pods-SwiftAutoCellHeightTests";
+			sourceTree = "<group>";
+		};
+		6C04B3400B07E8E59874794DF5B008D1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				260C83DAAEA9D7295EA313A34728FE8B /* Pods-SwiftAutoCellHeight */,
+				619C431FB9AFC7E8B32B366D42951112 /* Pods-SwiftAutoCellHeightTests */,
+				8F3BF66EDC64B9FAF70ABF578E2F9F0D /* Pods-SwiftAutoCellHeightUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A24957659B562070C6FD54002E0330AF /* Pods */,
+				5B7F736DBFA23AAD2A8374F9F51D73D2 /* Products */,
+				6C04B3400B07E8E59874794DF5B008D1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E40BDD214753E1F70F3A4ABE61A6C7A /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				8DEC92430472C5AD046E7F861C0EA03C /* Constraint.swift */,
+				646B1C84CB8B9ED6A88495862C479990 /* ConstraintAttributes.swift */,
+				0A604DEAFF03D03BC699E72E10C67B71 /* ConstraintConfig.swift */,
+				ECE9A2B12FAD5179289BD79BAC77D995 /* ConstraintConstantTarget.swift */,
+				FC80D101E67AAC55EB7A7DA474138F29 /* ConstraintDescription.swift */,
+				8DEFE805792598886FC384C0B0A3EF38 /* ConstraintDSL.swift */,
+				6B293100C0290E65E0BC870B684749EE /* ConstraintInsets.swift */,
+				E5FC83115BE318FE6323B0F9EFF8AD4E /* ConstraintInsetTarget.swift */,
+				6DECDB5C71A137EEEA16CEB2DD800330 /* ConstraintItem.swift */,
+				13073B460DCA5A885901AEF7AB347371 /* ConstraintLayoutGuide.swift */,
+				9367805C3148DFB7993AC74CFD215DC2 /* ConstraintLayoutGuide+Extensions.swift */,
+				6C1CD2DEFFFFBE20323DBA9A34D77244 /* ConstraintLayoutGuideDSL.swift */,
+				A462519E1C4775536E35556F3795C991 /* ConstraintLayoutSupport.swift */,
+				2C0F49073113894FE292B3687B4ECB69 /* ConstraintLayoutSupportDSL.swift */,
+				ABC30665F5851A91F53B06C1C5DB086F /* ConstraintMaker.swift */,
+				CFD7D51E12631CD67464E874DF8B217B /* ConstraintMakerEditable.swift */,
+				593ADC9CCA6A730223A7A1761308569E /* ConstraintMakerExtendable.swift */,
+				0843C3DF394CE5E92C0ADD53F355D0CC /* ConstraintMakerFinalizable.swift */,
+				869EE947ABEB849C41E6E2759CB73461 /* ConstraintMakerPriortizable.swift */,
+				359C2B9292B588439EC410BDD60AC4ED /* ConstraintMakerRelatable.swift */,
+				37D41E08E365B8155DF32EB5D064DEBD /* ConstraintMultiplierTarget.swift */,
+				62EF9279D230438E1DF533F8BCBEC262 /* ConstraintOffsetTarget.swift */,
+				6D51CAB784598D20B25F8D8697936547 /* ConstraintPriority.swift */,
+				06C2911388ED349020316062C27A0552 /* ConstraintPriorityTarget.swift */,
+				6580BC912561D405845ED2A61C49CDBF /* ConstraintRelatableTarget.swift */,
+				12E88B541786D560F47EDA8B1F69331F /* ConstraintRelation.swift */,
+				9CB07029E1AB6B48844606B94F63C7D3 /* ConstraintView.swift */,
+				542616B9ACD95DF820563AF6812054DB /* ConstraintView+Extensions.swift */,
+				AE22B2BDC310B15F7DDC06B930A34C08 /* ConstraintViewDSL.swift */,
+				DC8312E198200C0AEA234E70043168A5 /* Debugging.swift */,
+				7D8146EFFBA522D816BA04C83EB0DF7B /* LayoutConstraint.swift */,
+				6A6B3F31044A960BEE2B4EA495062C50 /* LayoutConstraintItem.swift */,
+				EF82A6ACAA600E4D7DB0ED2CD8810552 /* UILayoutSupport+Extensions.swift */,
+				CC7756E5073E7584BFE69508FFBBCB90 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		8F3BF66EDC64B9FAF70ABF578E2F9F0D /* Pods-SwiftAutoCellHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				828B5A1D4E99C1A81A155A036F8FB8DD /* Info.plist */,
+				4DDD6F4C09DE4EB9982F4EE46B1DB606 /* Pods-SwiftAutoCellHeightUITests.modulemap */,
+				53FEBCFDA4E17BC35E66708792E964D9 /* Pods-SwiftAutoCellHeightUITests-acknowledgements.markdown */,
+				F0CA5EB623AD7EC78BD9056C2F9AD233 /* Pods-SwiftAutoCellHeightUITests-acknowledgements.plist */,
+				985A33A955CF9238941DDDB10C2C0F2D /* Pods-SwiftAutoCellHeightUITests-dummy.m */,
+				919D44FF4B5E2279C8EF5CA0F73A1A2B /* Pods-SwiftAutoCellHeightUITests-frameworks.sh */,
+				67F4A23665FA32647D1B1F9C1758A90E /* Pods-SwiftAutoCellHeightUITests-resources.sh */,
+				F216DD971A57ECFFD61B5F616C3820FD /* Pods-SwiftAutoCellHeightUITests-umbrella.h */,
+				47502374DB954F117FC78CBCE457A36E /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */,
+				F82030A5EB884998AFF80F2E5E0464DE /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */,
+			);
+			name = "Pods-SwiftAutoCellHeightUITests";
+			path = "Target Support Files/Pods-SwiftAutoCellHeightUITests";
+			sourceTree = "<group>";
+		};
+		A24957659B562070C6FD54002E0330AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E40BDD214753E1F70F3A4ABE61A6C7A /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC7756E5073E7584BFE69508FFBBCB90 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A6BDB5F0FBCAC3506F22584473F6020 /* Info.plist */,
+				0B0A453636C1F962DEEDAD9FD8D1FA51 /* SnapKit.modulemap */,
+				54B04DD12F6342C19E0EF6B3167130D3 /* SnapKit.xcconfig */,
+				FDB2E01187F1C611F313E97AF0FA73C9 /* SnapKit-dummy.m */,
+				C78D9100A663E6501F912089BC90230C /* SnapKit-prefix.pch */,
+				29DA246624787CFC6FA77FF2F1B30237 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18E1D52B0B1BB12BAF96D1887D68D558 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFCF9A736FF60400B770B253A7BA037 /* Pods-SwiftAutoCellHeight-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967DDB11519A9F6E1E86200203ADD184 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B5809BCDDDA87B9DDB6B44634CAF7F /* Pods-SwiftAutoCellHeightUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB54DCFCBD99E87970B078C95F75D2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0752736C1A1BD8C694D39AAA9D85D604 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140389E010A3A23137ECF907915A4A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48594764A3203D09978E9EC5B58D11B3 /* Pods-SwiftAutoCellHeightTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		103D5BD07A8498D36806A39B310960F9 /* Pods-SwiftAutoCellHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4D72FCAC889A71FD50ADB8184850A9 /* Build configuration list for PBXNativeTarget "Pods-SwiftAutoCellHeightTests" */;
+			buildPhases = (
+				B6D24F3EE90191C454063AE1A246900A /* Sources */,
+				65139525550ADEF57C299F47825B4F4E /* Frameworks */,
+				E140389E010A3A23137ECF907915A4A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftAutoCellHeightTests";
+			productName = "Pods-SwiftAutoCellHeightTests";
+			productReference = 8A093742E0C2D2673D4E008F611BB03C /* Pods_SwiftAutoCellHeightTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6345D66D194D27A7EBD2DFA0D01F2FAC /* Pods-SwiftAutoCellHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D79046B30232A1FD0A62AC63AC6DE8F /* Build configuration list for PBXNativeTarget "Pods-SwiftAutoCellHeight" */;
+			buildPhases = (
+				F59B82454709B9545D9CB26216266020 /* Sources */,
+				EB2EEEBB812E05D0289EC23CE573456F /* Frameworks */,
+				18E1D52B0B1BB12BAF96D1887D68D558 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD9A1FAB22B3D52E3FA5763DCF75C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftAutoCellHeight";
+			productName = "Pods-SwiftAutoCellHeight";
+			productReference = 034E7C3763A04377074C0C64A9A8239B /* Pods_SwiftAutoCellHeight.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81F0958D7D8C9DA42F8FAD7F2FB1D5E6 /* Pods-SwiftAutoCellHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB069C27DA2E8B81BAB3B7434C3C091C /* Build configuration list for PBXNativeTarget "Pods-SwiftAutoCellHeightUITests" */;
+			buildPhases = (
+				BCEE0D9559AC0F491C0C8C7EA60882C1 /* Sources */,
+				0A8AE2C8B359210DDC03CC44506EA070 /* Frameworks */,
+				967DDB11519A9F6E1E86200203ADD184 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftAutoCellHeightUITests";
+			productName = "Pods-SwiftAutoCellHeightUITests";
+			productReference = A1C162120133B463966B9CE23CFFEE4A /* Pods_SwiftAutoCellHeightUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0BF1F0A70196FE9BB4D7ABE86BE5623 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC8C3301CAEF32A0D60BB1637AF40F6 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				20A7108012AB0BD32CA44861DC6BA413 /* Sources */,
+				494D4B395ABB6A524BFCA90D5838346C /* Frameworks */,
+				AAB54DCFCBD99E87970B078C95F75D2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = A2F701DDD4AD92995A467A26CBA85F4A /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5B7F736DBFA23AAD2A8374F9F51D73D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6345D66D194D27A7EBD2DFA0D01F2FAC /* Pods-SwiftAutoCellHeight */,
+				103D5BD07A8498D36806A39B310960F9 /* Pods-SwiftAutoCellHeightTests */,
+				81F0958D7D8C9DA42F8FAD7F2FB1D5E6 /* Pods-SwiftAutoCellHeightUITests */,
+				E0BF1F0A70196FE9BB4D7ABE86BE5623 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20A7108012AB0BD32CA44861DC6BA413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A3C60016895F0F69E6BA99BF5823FE /* Constraint.swift in Sources */,
+				F13122CB32FB9FF4D137BDF35C197818 /* ConstraintAttributes.swift in Sources */,
+				7C38AE33A8C9BB5D88014566FA146533 /* ConstraintConfig.swift in Sources */,
+				DC0006DB5A8A28E950D7B30D74D526D8 /* ConstraintConstantTarget.swift in Sources */,
+				8F46D9E5D612258E289046B0D5B98A6C /* ConstraintDescription.swift in Sources */,
+				9476B8B91EB7A8F810223839C747FA0B /* ConstraintDSL.swift in Sources */,
+				250DC913E30B329554459CB816CCB979 /* ConstraintInsets.swift in Sources */,
+				8771AEB7AC7EC16FA2FD57237ACA87C2 /* ConstraintInsetTarget.swift in Sources */,
+				BA25EF6B9BE03CC561B6A7C734A599CF /* ConstraintItem.swift in Sources */,
+				D26B6D8EA0CEB439727118033799AE4E /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				48A2BB06487345A997B9447105EFD118 /* ConstraintLayoutGuide.swift in Sources */,
+				378FCDF3D061C0798438A10DC3FBA8DE /* ConstraintLayoutGuideDSL.swift in Sources */,
+				3F5C9F468AFD36AAC4D89CE1DE11D735 /* ConstraintLayoutSupport.swift in Sources */,
+				5D9BF489631F09542820DA32EA0D1613 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				22AD85B79B851F6EF26251C2F7D8F3EC /* ConstraintMaker.swift in Sources */,
+				7AE106833884756B5E96BA7B5885F485 /* ConstraintMakerEditable.swift in Sources */,
+				73035A4F67988E9F6ED62506860E2DD7 /* ConstraintMakerExtendable.swift in Sources */,
+				14E918183B3734CE95E696E09F56330A /* ConstraintMakerFinalizable.swift in Sources */,
+				DC1AA7948183DA126CF39D4B4746D57A /* ConstraintMakerPriortizable.swift in Sources */,
+				A7FCCFCA1C8DCAD1BBE6190B642C5E22 /* ConstraintMakerRelatable.swift in Sources */,
+				49A6F8A3A72F6797FFE624EF3556DF0F /* ConstraintMultiplierTarget.swift in Sources */,
+				EE18AE678268A40B41465E912055A0EE /* ConstraintOffsetTarget.swift in Sources */,
+				5C9369058D2D0E64E47E91471347D65D /* ConstraintPriority.swift in Sources */,
+				940EA41E859B0E39CF5DB7E08CB51837 /* ConstraintPriorityTarget.swift in Sources */,
+				59B7D231649B154AE781618388E7236B /* ConstraintRelatableTarget.swift in Sources */,
+				5DA870F10EFF218ABC90D587B5CFE44F /* ConstraintRelation.swift in Sources */,
+				4CD03692EB6B8DF0628C3D41D253F07E /* ConstraintView+Extensions.swift in Sources */,
+				264E945DB9A6F4BBC2124D52AE795E8B /* ConstraintView.swift in Sources */,
+				29100B6024CA3910875BB52492612361 /* ConstraintViewDSL.swift in Sources */,
+				52ABC539FEE6CC736D695F41A914A483 /* Debugging.swift in Sources */,
+				320891BA7480529C095CCE1A7649DF46 /* LayoutConstraint.swift in Sources */,
+				4C439688CAD7509B2CA0A15548423E69 /* LayoutConstraintItem.swift in Sources */,
+				3F25B0DB78E1F43A72657211CED862CB /* SnapKit-dummy.m in Sources */,
+				CDC59D95C296181D2F9B8CFA83B3EDE9 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D24F3EE90191C454063AE1A246900A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D42ACF6F377C3F96B44DD1FEB315E9C /* Pods-SwiftAutoCellHeightTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE0D9559AC0F491C0C8C7EA60882C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74FA5256813BFD706D784C77E47211BD /* Pods-SwiftAutoCellHeightUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59B82454709B9545D9CB26216266020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA18E49874880EA4970F8115BF5C916 /* Pods-SwiftAutoCellHeight-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0DD9A1FAB22B3D52E3FA5763DCF75C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = E0BF1F0A70196FE9BB4D7ABE86BE5623 /* SnapKit */;
+			targetProxy = 81A1E77584079E5CB7FD760241CA929C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30BD9BEFCF5E8F86593594F31BF39F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56489AA6834773EC2A8DB65A2A435453 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAutoCellHeightTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftAutoCellHeightTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A2645C3CFBC5CFA2AEDB990C8706457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47502374DB954F117FC78CBCE457A36E /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAutoCellHeightUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAutoCellHeightUITests/Pods-SwiftAutoCellHeightUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftAutoCellHeightUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		621AB785940626574F07364CB14760E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A47249A05C93978772C77B80D7642D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206B3F7B26C29ABE40D3D335ADC23493 /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAutoCellHeightTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftAutoCellHeightTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57C09D404C607DDE283C5C44183B2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C2FBC32FEF689433F2CCF42C7BF77C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C267EF987FA2B2ED0BC1705BB11CB7 /* Pods-SwiftAutoCellHeight.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAutoCellHeight/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftAutoCellHeight;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CB50DC0B199F83F119E0400A9D0F674D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B04DD12F6342C19E0EF6B3167130D3 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1410C7CA1EEADD2DD713DCD27D3A544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421C773B81CF42F5366294549179B1CC /* Pods-SwiftAutoCellHeight.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAutoCellHeight/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftAutoCellHeight;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB48ECFBE2F51ED1597A793C5A0D0D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82030A5EB884998AFF80F2E5E0464DE /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAutoCellHeightUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAutoCellHeightUITests/Pods-SwiftAutoCellHeightUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftAutoCellHeightUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD3CAA1952CC5827DE382ABD265CA438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B04DD12F6342C19E0EF6B3167130D3 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D79046B30232A1FD0A62AC63AC6DE8F /* Build configuration list for PBXNativeTarget "Pods-SwiftAutoCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1410C7CA1EEADD2DD713DCD27D3A544 /* Debug */,
+				C2FBC32FEF689433F2CCF42C7BF77C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E4D72FCAC889A71FD50ADB8184850A9 /* Build configuration list for PBXNativeTarget "Pods-SwiftAutoCellHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47249A05C93978772C77B80D7642D98 /* Debug */,
+				30BD9BEFCF5E8F86593594F31BF39F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C09D404C607DDE283C5C44183B2A1 /* Debug */,
+				621AB785940626574F07364CB14760E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC8C3301CAEF32A0D60BB1637AF40F6 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3CAA1952CC5827DE382ABD265CA438 /* Debug */,
+				CB50DC0B199F83F119E0400A9D0F674D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB069C27DA2E8B81BAB3B7434C3C091C /* Build configuration list for PBXNativeTarget "Pods-SwiftAutoCellHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2645C3CFBC5CFA2AEDB990C8706457 /* Debug */,
+				FB48ECFBE2F51ED1597A793C5A0D0D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
