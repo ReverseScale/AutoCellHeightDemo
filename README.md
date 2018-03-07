@@ -116,10 +116,10 @@ Swift、Objective-C 双版本同步更新：
 * 离屏渲染问题优化方案
 * Model setter 赋值规范
 
-| 名称 |1.列表页 |2.自适应列表页 |3.动态跳转详情页 |
-| ------------- | ------------- | ------------- | ------------- |
-| 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-15/30194771.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-15/75991299.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-15/9655826.jpg) |
-| 描述 | 通过 storyboard 搭建基本框架 | 相对布局纯代码 cell 高度自适应 | 动态数据跳转详情页 |
+|1.列表页 |2.自适应列表页 |3.动态跳转详情页 |
+| ------------- | ------------- | ------------- |
+| ![](http://og1yl0w9z.bkt.clouddn.com/17-9-15/30194771.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-15/75991299.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-15/9655826.jpg) |
+| 通过 storyboard 搭建基本框架 | 相对布局纯代码 cell 高度自适应 | 动态数据跳转详情页 |
 
 
 ## 🚀 框架的优势
