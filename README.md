@@ -1,11 +1,13 @@
 # AutoCellHeightDemo
-OC + Swift dual version dynamic list UITableView data loading and cell dynamics highly adaptive.
 
----
 ![](https://img.shields.io/badge/platform-iOS-red.svg) 
 ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
 ![](https://img.shields.io/badge/download-8.2MB-brightgreen.svg)
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
+
+[EN](#Requirements) | [中文](#中文说明)
+
+OC + Swift dual version dynamic list UITableView data loading and cell dynamics highly adaptive.
 
 Centralized management of TableView Data for temporary fixed class table structure, the page jump by the Runtime class method (and storyboard dynamic jump), suitable for changes in the sort of list data.
 
