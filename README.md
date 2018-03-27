@@ -17,10 +17,11 @@ Swift, Objective-C dual-version synchronization update:
 Off-screen rendering problem optimization program
 * Model setter assignment specification
 
-| 1.List Page | 2.Adaptive List Page | 3.Dynamic Jump Page |
-| ------------- | ------------- | ------------- |
-| ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/22602827.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/47650320.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/93402075.jpg) |
-| Build basic framework through storyboard | Relative layout Pure code cell highly adaptive | Dynamic data jump Details page |
+|1.List page |2.JSON dynamic form page |3.Dynamic jump detail page |4.Package static form example |
+| ------------- | ------------- | ------------- | ------------- |
+| ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/30826281.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/47650320.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/93402075.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/93520148.jpg) |
+| Building a basic framework via storyboard | JSON dynamic list page | dynamic data jump detail page | package static list page |
+
 
 
 ## 🚀 Advantage
@@ -113,10 +114,10 @@ Swift、Objective-C 双版本同步更新：
 * 离屏渲染问题优化方案
 * Model setter 赋值规范
 
-|1.列表页 |2.自适应列表页 |3.动态跳转详情页 |
-| ------------- | ------------- | ------------- |
-| ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/22602827.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/47650320.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/93402075.jpg) |
-| 通过 storyboard 搭建基本框架 | 相对布局纯代码 cell 高度自适应 | 动态数据跳转详情页 |
+|1.列表页 |2.JSON 动态表格页 |3.动态跳转详情页 |4.封装静态表格示例 |
+| ------------- | ------------- | ------------- | ------------- |
+| ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/30826281.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/47650320.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/93402075.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/93520148.jpg) |
+| 通过 storyboard 搭建基本框架 | JSON 动态列表页 | 动态数据跳转详情页 | 封装静态列表页 |
 
 
 ## 🚀 框架的优势
