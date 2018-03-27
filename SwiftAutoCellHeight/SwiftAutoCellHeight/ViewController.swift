@@ -54,7 +54,7 @@ class ViewController: UIViewController {
             ["Watermark"]
         ]
         titleDic = [
-            "Logo":"GAVTH is a design & development studio.",
+            "Logo":"GAVTH is a design & development studio.Determined to open the best products and constantly improve the design.",
             "Workplace":"Definition of GAVTH in old language is deep pit. The logotype, in fact, composed exclusively of contour and curved lines that inspired from topographic lines. The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet.",
             "Watermark":"The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet."
         ]

@@ -6,14 +6,14 @@
 //  Copyright © 2017年 StevenXie. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DynamicViewController.h"
 #import <Masonry.h>
 
 #import "AutoMHTableViewCell.h"
 #import "XIBTableViewCell.h"
 #import "Model.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface DynamicViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) NSArray *arrayList;
@@ -21,7 +21,7 @@
 @property (nonatomic, strong) NSDictionary *picDic;
 @end
 
-@implementation ViewController
+@implementation DynamicViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,7 +43,7 @@
 - (void)arrangeData {
     self.arrayList = @[@[@"Logo", @"Workplace"], @[@"Watermark"],@[@"Logo", @"Workplace"], @[@"Watermark"],@[@"Logo", @"Workplace"], @[@"Watermark"]];
     
-    self.titleDic = @{@"Logo":@"GAVTH is a design & development studio.",
+    self.titleDic = @{@"Logo":@"GAVTH is a design & development studio.Determined to open the best products and constantly improve the design.",
                       @"Workplace":@"Definition of GAVTH in old language is deep pit. The logotype, in fact, composed exclusively of contour and curved lines that inspired from topographic lines. The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet.",
                       @"Watermark":@"The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet."
                       };

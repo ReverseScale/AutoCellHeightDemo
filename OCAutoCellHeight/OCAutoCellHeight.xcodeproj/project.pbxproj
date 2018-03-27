@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342D0868206A1318008D0F8D /* CenterTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0866206A1318008D0F8D /* CenterTitleTableViewCell.m */; };
+		342D0869206A1318008D0F8D /* NormalSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0867206A1318008D0F8D /* NormalSettingTableViewCell.m */; };
+		342D0878206A1421008D0F8D /* StaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0877206A1421008D0F8D /* StaticViewController.m */; };
+		342D0897206A18F8008D0F8D /* UITableView+ZHNStaticTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D088E206A18F8008D0F8D /* UITableView+ZHNStaticTable.m */; };
+		342D0898206A18F8008D0F8D /* ZHNDelegateContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0890206A18F8008D0F8D /* ZHNDelegateContainer.m */; };
+		342D0899206A18F8008D0F8D /* ZHNStaticTableDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0892206A18F8008D0F8D /* ZHNStaticTableDataManager.m */; };
+		342D089A206A18F9008D0F8D /* ZHNStaticTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0894206A18F8008D0F8D /* ZHNStaticTableRow.m */; };
+		342D089B206A18F9008D0F8D /* ZHNStaticTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D0896206A18F8008D0F8D /* ZHNStaticTableSection.m */; };
 		34A37C74201EC2E80039175F /* XIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C72201EC2E80039175F /* XIBTableViewCell.m */; };
 		34A37C75201EC2E80039175F /* XIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A37C73201EC2E80039175F /* XIBTableViewCell.xib */; };
 		34A37C7C201EE6BC0039175F /* UIImage+RadiusCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C7B201EE6BC0039175F /* UIImage+RadiusCorner.m */; };
 		34A37C81201EEF710039175F /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C80201EEF710039175F /* Model.m */; };
 		34C6556C1F6A5863000065DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C6556B1F6A5863000065DD /* main.m */; };
 		34C6556F1F6A5863000065DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C6556E1F6A5863000065DD /* AppDelegate.m */; };
-		34C655721F6A5863000065DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C655711F6A5863000065DD /* ViewController.m */; };
+		34C655721F6A5863000065DD /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C655711F6A5863000065DD /* DynamicViewController.m */; };
 		34C655751F6A5863000065DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655731F6A5863000065DD /* Main.storyboard */; };
 		34C655771F6A5863000065DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C655761F6A5863000065DD /* Assets.xcassets */; };
 		34C6557A1F6A5863000065DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655781F6A5863000065DD /* LaunchScreen.storyboard */; };
@@ -52,6 +60,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		342D0864206A1317008D0F8D /* NormalSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalSettingTableViewCell.h; sourceTree = "<group>"; };
+		342D0865206A1317008D0F8D /* CenterTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterTitleTableViewCell.h; sourceTree = "<group>"; };
+		342D0866206A1318008D0F8D /* CenterTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterTitleTableViewCell.m; sourceTree = "<group>"; };
+		342D0867206A1318008D0F8D /* NormalSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalSettingTableViewCell.m; sourceTree = "<group>"; };
+		342D0876206A1421008D0F8D /* StaticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticViewController.h; sourceTree = "<group>"; };
+		342D0877206A1421008D0F8D /* StaticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticViewController.m; sourceTree = "<group>"; };
+		342D088D206A18F8008D0F8D /* UITableView+ZHNStaticTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZHNStaticTable.h"; sourceTree = "<group>"; };
+		342D088E206A18F8008D0F8D /* UITableView+ZHNStaticTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZHNStaticTable.m"; sourceTree = "<group>"; };
+		342D088F206A18F8008D0F8D /* ZHNDelegateContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNDelegateContainer.h; sourceTree = "<group>"; };
+		342D0890206A18F8008D0F8D /* ZHNDelegateContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNDelegateContainer.m; sourceTree = "<group>"; };
+		342D0891206A18F8008D0F8D /* ZHNStaticTableDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNStaticTableDataManager.h; sourceTree = "<group>"; };
+		342D0892206A18F8008D0F8D /* ZHNStaticTableDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableDataManager.m; sourceTree = "<group>"; };
+		342D0893206A18F8008D0F8D /* ZHNStaticTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNStaticTableRow.h; sourceTree = "<group>"; };
+		342D0894206A18F8008D0F8D /* ZHNStaticTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableRow.m; sourceTree = "<group>"; };
+		342D0895206A18F8008D0F8D /* ZHNStaticTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNStaticTableSection.h; sourceTree = "<group>"; };
+		342D0896206A18F8008D0F8D /* ZHNStaticTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableSection.m; sourceTree = "<group>"; };
 		34A37C71201EC2E80039175F /* XIBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XIBTableViewCell.h; sourceTree = "<group>"; };
 		34A37C72201EC2E80039175F /* XIBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBTableViewCell.m; sourceTree = "<group>"; };
 		34A37C73201EC2E80039175F /* XIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBTableViewCell.xib; sourceTree = "<group>"; };
@@ -63,8 +87,8 @@
 		34C6556B1F6A5863000065DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34C6556D1F6A5863000065DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34C6556E1F6A5863000065DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		34C655701F6A5863000065DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		34C655711F6A5863000065DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34C655701F6A5863000065DD /* DynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		34C655711F6A5863000065DD /* DynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
 		34C655741F6A5863000065DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34C655761F6A5863000065DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C655791F6A5863000065DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +152,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342D084D206A126D008D0F8D /* DynamicTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				342D084E206A128D008D0F8D /* MasonryCells */,
+				342D084F206A129A008D0F8D /* XIBCells */,
+			);
+			path = DynamicTableCells;
+			sourceTree = "<group>";
+		};
+		342D084E206A128D008D0F8D /* MasonryCells */ = {
+			isa = PBXGroup;
+			children = (
+				34C6559D1F6A5B55000065DD /* AutoMHTableViewCell.h */,
+				34C6559E1F6A5B55000065DD /* AutoMHTableViewCell.m */,
+			);
+			path = MasonryCells;
+			sourceTree = "<group>";
+		};
+		342D084F206A129A008D0F8D /* XIBCells */ = {
+			isa = PBXGroup;
+			children = (
+				34A37C71201EC2E80039175F /* XIBTableViewCell.h */,
+				34A37C72201EC2E80039175F /* XIBTableViewCell.m */,
+				34A37C73201EC2E80039175F /* XIBTableViewCell.xib */,
+			);
+			path = XIBCells;
+			sourceTree = "<group>";
+		};
+		342D0850206A12A9008D0F8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34A37C7F201EEF710039175F /* Model.h */,
+				34A37C80201EEF710039175F /* Model.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		342D0851206A12C1008D0F8D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				342D088C206A18F8008D0F8D /* ZHNStaticTable */,
+				342D0875206A1330008D0F8D /* UIImageExtended */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		342D0852206A12CF008D0F8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34C655A01F6A5E0C000065DD /* Icon.png */,
+				34C655A21F6A64F2000065DD /* PicText.png */,
+				34C655A31F6A64F2000065DD /* PicImg.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		342D0853206A12F9008D0F8D /* StaticTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				342D0864206A1317008D0F8D /* NormalSettingTableViewCell.h */,
+				342D0867206A1318008D0F8D /* NormalSettingTableViewCell.m */,
+				342D0865206A1317008D0F8D /* CenterTitleTableViewCell.h */,
+				342D0866206A1318008D0F8D /* CenterTitleTableViewCell.m */,
+			);
+			path = StaticTableCells;
+			sourceTree = "<group>";
+		};
+		342D0875206A1330008D0F8D /* UIImageExtended */ = {
+			isa = PBXGroup;
+			children = (
+				34A37C7A201EE6BC0039175F /* UIImage+RadiusCorner.h */,
+				34A37C7B201EE6BC0039175F /* UIImage+RadiusCorner.m */,
+			);
+			path = UIImageExtended;
+			sourceTree = "<group>";
+		};
+		342D088C206A18F8008D0F8D /* ZHNStaticTable */ = {
+			isa = PBXGroup;
+			children = (
+				342D088D206A18F8008D0F8D /* UITableView+ZHNStaticTable.h */,
+				342D088E206A18F8008D0F8D /* UITableView+ZHNStaticTable.m */,
+				342D088F206A18F8008D0F8D /* ZHNDelegateContainer.h */,
+				342D0890206A18F8008D0F8D /* ZHNDelegateContainer.m */,
+				342D0891206A18F8008D0F8D /* ZHNStaticTableDataManager.h */,
+				342D0892206A18F8008D0F8D /* ZHNStaticTableDataManager.m */,
+				342D0893206A18F8008D0F8D /* ZHNStaticTableRow.h */,
+				342D0894206A18F8008D0F8D /* ZHNStaticTableRow.m */,
+				342D0895206A18F8008D0F8D /* ZHNStaticTableSection.h */,
+				342D0896206A18F8008D0F8D /* ZHNStaticTableSection.m */,
+			);
+			path = ZHNStaticTable;
+			sourceTree = "<group>";
+		};
 		34C6555E1F6A5863000065DD = {
 			isa = PBXGroup;
 			children = (
@@ -155,21 +272,16 @@
 			children = (
 				34C6556D1F6A5863000065DD /* AppDelegate.h */,
 				34C6556E1F6A5863000065DD /* AppDelegate.m */,
-				34C655701F6A5863000065DD /* ViewController.h */,
-				34C655711F6A5863000065DD /* ViewController.m */,
-				34C6559D1F6A5B55000065DD /* AutoMHTableViewCell.h */,
-				34C6559E1F6A5B55000065DD /* AutoMHTableViewCell.m */,
-				34A37C71201EC2E80039175F /* XIBTableViewCell.h */,
-				34A37C72201EC2E80039175F /* XIBTableViewCell.m */,
-				34A37C73201EC2E80039175F /* XIBTableViewCell.xib */,
-				34A37C7A201EE6BC0039175F /* UIImage+RadiusCorner.h */,
-				34A37C7B201EE6BC0039175F /* UIImage+RadiusCorner.m */,
-				34A37C7F201EEF710039175F /* Model.h */,
-				34A37C80201EEF710039175F /* Model.m */,
+				34C655701F6A5863000065DD /* DynamicViewController.h */,
+				34C655711F6A5863000065DD /* DynamicViewController.m */,
+				342D0876206A1421008D0F8D /* StaticViewController.h */,
+				342D0877206A1421008D0F8D /* StaticViewController.m */,
+				342D0850206A12A9008D0F8D /* Model */,
+				342D0853206A12F9008D0F8D /* StaticTableCells */,
+				342D084D206A126D008D0F8D /* DynamicTableCells */,
 				34C655EC1F6A805E000065DD /* DetailController */,
-				34C655A01F6A5E0C000065DD /* Icon.png */,
-				34C655A21F6A64F2000065DD /* PicText.png */,
-				34C655A31F6A64F2000065DD /* PicImg.png */,
+				342D0851206A12C1008D0F8D /* Tools */,
+				342D0852206A12CF008D0F8D /* Resources */,
 				34C655731F6A5863000065DD /* Main.storyboard */,
 				34C655761F6A5863000065DD /* Assets.xcassets */,
 				34C655781F6A5863000065DD /* LaunchScreen.storyboard */,
@@ -533,13 +645,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C655F01F6A806D000065DD /* Logo.m in Sources */,
-				34C655721F6A5863000065DD /* ViewController.m in Sources */,
+				342D0869206A1318008D0F8D /* NormalSettingTableViewCell.m in Sources */,
+				34C655721F6A5863000065DD /* DynamicViewController.m in Sources */,
 				34C6559F1F6A5B55000065DD /* AutoMHTableViewCell.m in Sources */,
 				34A37C74201EC2E80039175F /* XIBTableViewCell.m in Sources */,
+				342D089B206A18F9008D0F8D /* ZHNStaticTableSection.m in Sources */,
+				342D089A206A18F9008D0F8D /* ZHNStaticTableRow.m in Sources */,
 				34C6556F1F6A5863000065DD /* AppDelegate.m in Sources */,
 				34A37C7C201EE6BC0039175F /* UIImage+RadiusCorner.m in Sources */,
 				34C655FD1F6A8099000065DD /* Workplace.m in Sources */,
 				34C655F81F6A808B000065DD /* Watermark.m in Sources */,
+				342D0868206A1318008D0F8D /* CenterTitleTableViewCell.m in Sources */,
+				342D0878206A1421008D0F8D /* StaticViewController.m in Sources */,
+				342D0899206A18F8008D0F8D /* ZHNStaticTableDataManager.m in Sources */,
+				342D0897206A18F8008D0F8D /* UITableView+ZHNStaticTable.m in Sources */,
+				342D0898206A18F8008D0F8D /* ZHNDelegateContainer.m in Sources */,
 				34C6556C1F6A5863000065DD /* main.m in Sources */,
 				34A37C81201EEF710039175F /* Model.m in Sources */,
 			);
