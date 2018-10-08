@@ -19,7 +19,7 @@ Off-screen rendering problem optimization program
 
 |1.List page |2.JSON dynamic form page |3.Dynamic jump detail page |4.Package static form example |
 | ------------- | ------------- | ------------- | ------------- |
-| ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/62043506.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/47650320.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/68082840.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-10-8/48794364.jpg) |
+| ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/62043506.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-14/47650320.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/68082840.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/18-3-27/93520148.jpg) |
 | Building a basic framework via storyboard | JSON dynamic list page | dynamic data jump detail page | package static list page |
 
 
