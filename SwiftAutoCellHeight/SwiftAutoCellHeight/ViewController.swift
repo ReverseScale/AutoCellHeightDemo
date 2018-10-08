@@ -19,14 +19,11 @@ class ViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.grouped)
-
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
-
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
-        
         return tableView
     }()
     
@@ -107,6 +104,19 @@ class ViewController: UIViewController {
 //extension：类扩展只能扩充方法，不能扩充属性
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     //DataSource
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 0.01))
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 0.01))
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return listArray.count
     }
