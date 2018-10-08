@@ -59,6 +59,7 @@ class AutoMHTableViewCell: UITableViewCell {
         labelContronter.textColor = UIColor.gray
         labelContronter.font = UIFont.systemFont(ofSize: 16)
         labelContronter.isUserInteractionEnabled = true
+        
         let tapGesture = UITapGestureRecognizer(target: self, action:#selector(Actionbuton))
         labelContronter.addGestureRecognizer(tapGesture)
         contentView.addSubview(labelContronter)
@@ -72,6 +73,8 @@ class AutoMHTableViewCell: UITableViewCell {
         }
         imagePhone.snp.makeConstraints { (make) in
             make.top.equalTo(labelTitle.snp.bottom).offset(20)
+            make.left.equalTo(10)
+            make.right.equalTo(-10)
         }
         labelContronter.snp.makeConstraints { (make) in
             make.top.equalTo(imagePhone.snp.bottom).offset(15)

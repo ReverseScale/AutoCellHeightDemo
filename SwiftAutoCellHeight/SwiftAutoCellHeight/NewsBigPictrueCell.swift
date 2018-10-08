@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XIBTableViewCell: UITableViewCell {
+class NewsBigPictrueCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imagePhone: UIImageView!
     @IBOutlet weak var labelContronter: UILabel!

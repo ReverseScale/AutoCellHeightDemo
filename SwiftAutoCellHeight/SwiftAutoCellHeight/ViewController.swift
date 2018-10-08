@@ -135,7 +135,7 @@ extension ViewController {
         let titleKey = (arrayList[indexPath.section] as! NSArray)
         let tky = titleKey[indexPath.row]
         
-        cell.labelTitle.text = tky as? String
+        cell.labelTitle.text = self.titleDic[tky] as? String
         cell.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
         cell.labelContronter.text = self.titleDic[tky] as? String
         
@@ -146,13 +146,13 @@ extension ViewController {
     }
     /// XIB自定义 Cell
     func customXIBTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifierhot = "XIBTableViewCell"
+        let identifierhot = "NewsBigPictrueCell"
         
         //重用写法
-        var cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? XIBTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? NewsBigPictrueCell
         if cell == nil {
             tableView.register(UINib(nibName: identifierhot, bundle: nil), forCellReuseIdentifier: identifierhot)
-            cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? XIBTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? NewsBigPictrueCell
             tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         }
 
@@ -167,7 +167,7 @@ extension ViewController {
         let tky = titleKey[indexPath.row]
         
         let modelAlg = Model()
-        modelAlg.title = tky as? String
+        modelAlg.title = self.titleDic[tky] as? String
         modelAlg.picture = self.picDic[tky] as? String
         modelAlg.label = self.titleDic[tky] as? String
         
