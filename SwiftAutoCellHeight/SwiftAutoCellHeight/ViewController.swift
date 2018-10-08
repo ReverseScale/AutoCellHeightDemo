@@ -7,34 +7,34 @@
 //
 
 import UIKit
+import SnapKit
 
 let customcellIdentifier:String = "customcell"
 
 class ViewController: UIViewController {
-    var arrayList = NSArray()
-    var titleDic = NSDictionary()
-    var picDic = NSDictionary()
+    var listArray = Array<Any>()
+    var titleDic = Dictionary<String, String>()
+    var typeBoolDic = Dictionary<String, Any>()
+    var extendTipDic = Dictionary<String, String>()
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.plain)
+        let tableView = UITableView(frame: CGRect.zero, style: UITableViewStyle.grouped)
 
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
-        
-        tableView.register(AutoMHTableViewCell.self , forCellReuseIdentifier: customcellIdentifier)
-        
+
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
+        
         return tableView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        arrangeData()
         self.view.addSubview(tableView)
+        
+        reloadArrangeData()
         
         updateViewConstraints()
     }
@@ -44,33 +44,43 @@ class ViewController: UIViewController {
     }
     
 // MARK: - Data
-    func arrangeData() {
-        arrayList = [
-            ["Logo","Workplace"],
-            ["Watermark"],
-            ["Logo","Workplace"],
-            ["Watermark"],
-            ["Logo","Workplace"],
-            ["Watermark"]
-        ]
-        titleDic = [
-            "Logo":"GAVTH is a design & development studio.Determined to open the best products and constantly improve the design.",
-            "Workplace":"Definition of GAVTH in old language is deep pit. The logotype, in fact, composed exclusively of contour and curved lines that inspired from topographic lines. The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet.",
-            "Watermark":"The choice of the color is not random; blue is a represent the figure of depth and clean, gray is an earth surface color and it gives neutrality and quiet."
-        ]
-        picDic = [
-            "Logo":"Icon.png",
-            "Workplace":"PicImg.png",
-            "Watermark":"PicText.png"
-        ]
-    }
-
-    func openDetailView(type:String) {
-        let vc:UIViewController = (NSClassFromString("SwiftAutoCellHeight."+type) as! UIViewController.Type).init()
-        self.navigationController?.pushViewController(vc, animated: true)
+    func reloadArrangeData() {
         
-        //storyboard 跳转
-//        self.performSegue(withIdentifier:type, sender: self)
+        listArray = UserDefaults.standard.bool(forKey: "AllPush")
+            ? [
+                ["AllPush", "MutePush"],
+                ["NewsPush", "FlashPush", "MarketPush"],
+                ["AuthorPush"],
+              ]
+            : [
+                ["AllPush"],
+              ]
+
+        titleDic = [
+            "AllPush":"接收新消息通知",
+            "MutePush":"免打扰",
+            "NewsPush":"文章消息通知",
+            "FlashPush":"块讯消息通知",
+            "MarketPush":"行情消息通知",
+            "AuthorPush":"关注作者更新通知",
+        ]
+        typeBoolDic = [
+            "AllPush":UserDefaults.standard.bool(forKey: "AllPush"),
+            "MutePush":UserDefaults.standard.bool(forKey: "MutePush"),
+            "NewsPush":UserDefaults.standard.bool(forKey: "NewsPush"),
+            "FlashPush":UserDefaults.standard.bool(forKey: "FlashPush"),
+            "MarketPush":UserDefaults.standard.bool(forKey: "MarketPush"),
+            "AuthorPush":UserDefaults.standard.bool(forKey: "AuthorPush"),
+            ]
+        extendTipDic = [
+            "AllPush":"",
+            "MutePush":"ExpandAble",
+            "NewsPush":"InfoAble",
+            "FlashPush":"InfoAble",
+            "MarketPush":"InfoAble",
+            "AuthorPush":"PushAble",
+        ]
+        tableView.reloadData()
     }
     
     override func updateViewConstraints() {
@@ -98,82 +108,50 @@ class ViewController: UIViewController {
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     //DataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return arrayList.count
+        return listArray.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (arrayList[section] as AnyObject).count
+        return (listArray[section] as AnyObject).count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return self.systemTableView(tableView, cellForRowAt: indexPath)
-//        return self.customCodeTableView(tableView, cellForRowAt: indexPath)
-        return self.customXIBTableView(tableView, cellForRowAt: indexPath)
+        return self.customXIBSwitchView(tableView, cellForRowAt: indexPath)
     }
     //Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let titleKey = (arrayList[indexPath.section] as! NSArray)
-        let tky = titleKey[indexPath.row]
-        openDetailView(type: tky as! String)
+//        let titleKey = (arrayList[indexPath.section] as! NSArray)
+//        let tky = titleKey[indexPath.row]
+//        openDetailView(type: tky as! String)
     }
 }
 extension ViewController {
-    /// 系统级
-    func systemTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "systemcell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "systemcell")
-        }
-        let titleKey = (arrayList[indexPath.section] as! NSArray)
-        let tky = titleKey[indexPath.row]
-        cell?.textLabel?.text = tky as? String
-        return cell ?? UITableViewCell()
-    }
-    /// 纯代码自定义 Cell
-    func customCodeTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:customcellIdentifier) as! AutoMHTableViewCell
-        cell.selectionStyle = .none
-        
-        let titleKey = (arrayList[indexPath.section] as! NSArray)
-        let tky = titleKey[indexPath.row]
-        
-        cell.labelTitle.text = self.titleDic[tky] as? String
-        cell.imagePhone.image = UIImage(named: self.picDic[tky] as! String)
-        cell.labelContronter.text = self.titleDic[tky] as? String
-        
-        cell.setNeedsUpdateConstraints()//系统调用updateConstraints
-        cell.updateConstraintsIfNeeded()//立即触发约束更新，自动更新布局
-        
-        return cell
-    }
-    /// XIB自定义 Cell
-    func customXIBTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifierhot = "NewsBigPictrueCell"
+
+    
+    func customXIBSwitchView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifierhot = "PushSwitchCell"
         
         //重用写法
-        var cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? NewsBigPictrueCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? PushSwitchCell
         if cell == nil {
             tableView.register(UINib(nibName: identifierhot, bundle: nil), forCellReuseIdentifier: identifierhot)
-            cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? NewsBigPictrueCell
+            cell = tableView.dequeueReusableCell(withIdentifier: identifierhot) as? PushSwitchCell
             tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         }
 
-        // 防止重用写法
-//        var cell = tableView.cellForRow(at: indexPath) as? XIBTableViewCell
-//        if cell == nil {
-//            cell = Bundle.main.loadNibNamed(identifierhot, owner: self, options: nil)?.last as? XIBTableViewCell
-//            tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-//        }
-        
-        let titleKey = (arrayList[indexPath.section] as! NSArray)
-        let tky = titleKey[indexPath.row]
-        
-        let modelAlg = Model()
-        modelAlg.title = self.titleDic[tky] as? String
-        modelAlg.picture = self.picDic[tky] as? String
-        modelAlg.label = self.titleDic[tky] as? String
-        
-        cell?.model = modelAlg
+        let modelkey = (listArray[indexPath.section] as! Array<Any>)[indexPath.row] as! String
 
+        let modelPushInfo = PushInfoModel()
+        modelPushInfo.pushKey = modelkey
+        modelPushInfo.pushTitle = titleDic[modelkey]!
+        modelPushInfo.pushType = typeBoolDic[modelkey] as! Bool
+        modelPushInfo.pushTip = extendTipDic[modelkey]!
+        cell?.model = modelPushInfo
+        
+        cell?.selectionStyle = .none
+        cell?.callBackBlock({ (string) in
+            self.reloadArrangeData()
+        })
         
         return cell!
     }
+
 }

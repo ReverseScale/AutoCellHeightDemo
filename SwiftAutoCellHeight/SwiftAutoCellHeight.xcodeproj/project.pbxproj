@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0CC468E955E92E7024D3CD59 /* Pods_SwiftAutoCellHeightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707785B22BFF5248BFD8D58E /* Pods_SwiftAutoCellHeightTests.framework */; };
-		34A37C78201EC88C0039175F /* NewsBigPictrueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C76201EC88C0039175F /* NewsBigPictrueCell.swift */; };
-		34A37C79201EC88C0039175F /* NewsBigPictrueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A37C77201EC88C0039175F /* NewsBigPictrueCell.xib */; };
 		34A37C7E201EE81F0039175F /* RadiusCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C7D201EE81F0039175F /* RadiusCorner.swift */; };
-		34A37C86201EF62C0039175F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C85201EF62C0039175F /* Model.swift */; };
+		34A37C86201EF62C0039175F /* PushInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37C85201EF62C0039175F /* PushInfoModel.swift */; };
 		34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B21F6A6992000065DD /* AppDelegate.swift */; };
 		34C655B51F6A6992000065DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655B41F6A6992000065DD /* ViewController.swift */; };
 		34C655B81F6A6992000065DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655B61F6A6992000065DD /* Main.storyboard */; };
@@ -19,13 +17,16 @@
 		34C655BD1F6A6992000065DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C655BB1F6A6992000065DD /* LaunchScreen.storyboard */; };
 		34C655C81F6A6993000065DD /* SwiftAutoCellHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655C71F6A6993000065DD /* SwiftAutoCellHeightTests.swift */; };
 		34C655D31F6A6993000065DD /* SwiftAutoCellHeightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655D21F6A6993000065DD /* SwiftAutoCellHeightUITests.swift */; };
-		34C655E11F6A6A2C000065DD /* AutoMHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */; };
 		34C655E61F6A75D2000065DD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C655E31F6A75D2000065DD /* Icon.png */; };
 		34C655E71F6A75D2000065DD /* PicText.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C655E41F6A75D2000065DD /* PicText.png */; };
 		34C655E81F6A75D2000065DD /* PicImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C655E51F6A75D2000065DD /* PicImg.png */; };
 		34C656241F6A89C0000065DD /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C656231F6A89C0000065DD /* Logo.swift */; };
 		34F976521F6BD3F800B2D363 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F976501F6BD3F700B2D363 /* Workplace.swift */; };
 		34F976551F6BD41100B2D363 /* Watermark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F976541F6BD41100B2D363 /* Watermark.swift */; };
+		527B1D0B21227C2000A6C3B4 /* PushSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B1D0921227C2000A6C3B4 /* PushSwitchCell.swift */; };
+		527B1D0C21227C2000A6C3B4 /* PushSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527B1D0A21227C2000A6C3B4 /* PushSwitchCell.xib */; };
+		527B1D0E21227DF000A6C3B4 /* PushTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B1D0D21227DF000A6C3B4 /* PushTimeView.swift */; };
+		527B1D1021227E0300A6C3B4 /* PushTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527B1D0F21227E0300A6C3B4 /* PushTimeView.xib */; };
 		5730B03E2D0D923DA3BCFA69 /* Pods_SwiftAutoCellHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3654FB4407E19E911E6C680 /* Pods_SwiftAutoCellHeight.framework */; };
 		70A192208C1F5AAD85F5BA32 /* Pods_SwiftAutoCellHeightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC093FEB7C59820BFED623FE /* Pods_SwiftAutoCellHeightUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,10 +50,8 @@
 
 /* Begin PBXFileReference section */
 		31B78E13522598AEA464AFC0 /* Pods-SwiftAutoCellHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeight/Pods-SwiftAutoCellHeight.debug.xcconfig"; sourceTree = "<group>"; };
-		34A37C76201EC88C0039175F /* NewsBigPictrueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBigPictrueCell.swift; sourceTree = "<group>"; };
-		34A37C77201EC88C0039175F /* NewsBigPictrueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsBigPictrueCell.xib; sourceTree = "<group>"; };
 		34A37C7D201EE81F0039175F /* RadiusCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusCorner.swift; sourceTree = "<group>"; };
-		34A37C85201EF62C0039175F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		34A37C85201EF62C0039175F /* PushInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushInfoModel.swift; sourceTree = "<group>"; };
 		34C655AF1F6A6992000065DD /* SwiftAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C655B21F6A6992000065DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C655B41F6A6992000065DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,13 +65,16 @@
 		34C655CE1F6A6993000065DD /* SwiftAutoCellHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAutoCellHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C655D21F6A6993000065DD /* SwiftAutoCellHeightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAutoCellHeightUITests.swift; sourceTree = "<group>"; };
 		34C655D41F6A6993000065DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMHTableViewCell.swift; sourceTree = "<group>"; };
 		34C655E31F6A75D2000065DD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		34C655E41F6A75D2000065DD /* PicText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicText.png; sourceTree = "<group>"; };
 		34C655E51F6A75D2000065DD /* PicImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicImg.png; sourceTree = "<group>"; };
 		34C656231F6A89C0000065DD /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		34F976501F6BD3F700B2D363 /* Workplace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
 		34F976541F6BD41100B2D363 /* Watermark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watermark.swift; sourceTree = "<group>"; };
+		527B1D0921227C2000A6C3B4 /* PushSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSwitchCell.swift; sourceTree = "<group>"; };
+		527B1D0A21227C2000A6C3B4 /* PushSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushSwitchCell.xib; sourceTree = "<group>"; };
+		527B1D0D21227DF000A6C3B4 /* PushTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTimeView.swift; sourceTree = "<group>"; };
+		527B1D0F21227E0300A6C3B4 /* PushTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushTimeView.xib; sourceTree = "<group>"; };
 		54BACC1D560D3D178786B1BC /* Pods-SwiftAutoCellHeightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C524029E4BA6E9A57AB5284 /* Pods-SwiftAutoCellHeightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAutoCellHeightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAutoCellHeightTests/Pods-SwiftAutoCellHeightTests.release.xcconfig"; sourceTree = "<group>"; };
 		707785B22BFF5248BFD8D58E /* Pods_SwiftAutoCellHeightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAutoCellHeightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,11 +150,12 @@
 			children = (
 				34C655B21F6A6992000065DD /* AppDelegate.swift */,
 				34C655B41F6A6992000065DD /* ViewController.swift */,
-				34C655E01F6A6A2C000065DD /* AutoMHTableViewCell.swift */,
-				34A37C76201EC88C0039175F /* NewsBigPictrueCell.swift */,
-				34A37C77201EC88C0039175F /* NewsBigPictrueCell.xib */,
-				34A37C7D201EE81F0039175F /* RadiusCorner.swift */,
-				34A37C85201EF62C0039175F /* Model.swift */,
+				527B1D0921227C2000A6C3B4 /* PushSwitchCell.swift */,
+				527B1D0A21227C2000A6C3B4 /* PushSwitchCell.xib */,
+				527B1D0D21227DF000A6C3B4 /* PushTimeView.swift */,
+				527B1D0F21227E0300A6C3B4 /* PushTimeView.xib */,
+				34A37C85201EF62C0039175F /* PushInfoModel.swift */,
+				527B1D132122993600A6C3B4 /* TestViewModel */,
 				34A37C70201EC0540039175F /* DetailController */,
 				34C655E31F6A75D2000065DD /* Icon.png */,
 				34C655E41F6A75D2000065DD /* PicText.png */,
@@ -191,6 +194,14 @@
 				FC093FEB7C59820BFED623FE /* Pods_SwiftAutoCellHeightUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		527B1D132122993600A6C3B4 /* TestViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34A37C7D201EE81F0039175F /* RadiusCorner.swift */,
+			);
+			path = TestViewModel;
 			sourceTree = "<group>";
 		};
 		E97F2E42F588877B403612EC /* Pods */ = {
@@ -283,16 +294,18 @@
 				TargetAttributes = {
 					34C655AE1F6A6992000065DD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7QT42R489Z;
+						DevelopmentTeam = MQ4BAK6QRP;
 						ProvisioningStyle = Automatic;
 					};
 					34C655C21F6A6993000065DD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MQ4BAK6QRP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 34C655AE1F6A6992000065DD;
 					};
 					34C655CD1F6A6993000065DD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MQ4BAK6QRP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 34C655AE1F6A6992000065DD;
 					};
@@ -327,8 +340,9 @@
 				34C655BD1F6A6992000065DD /* LaunchScreen.storyboard in Resources */,
 				34C655BA1F6A6992000065DD /* Assets.xcassets in Resources */,
 				34C655B81F6A6992000065DD /* Main.storyboard in Resources */,
+				527B1D1021227E0300A6C3B4 /* PushTimeView.xib in Resources */,
 				34C655E81F6A75D2000065DD /* PicImg.png in Resources */,
-				34A37C79201EC88C0039175F /* NewsBigPictrueCell.xib in Resources */,
+				527B1D0C21227C2000A6C3B4 /* PushSwitchCell.xib in Resources */,
 				34C655E71F6A75D2000065DD /* PicText.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,15 +506,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34A37C86201EF62C0039175F /* Model.swift in Sources */,
+				34A37C86201EF62C0039175F /* PushInfoModel.swift in Sources */,
 				34C655B51F6A6992000065DD /* ViewController.swift in Sources */,
 				34F976521F6BD3F800B2D363 /* Workplace.swift in Sources */,
 				34F976551F6BD41100B2D363 /* Watermark.swift in Sources */,
+				527B1D0E21227DF000A6C3B4 /* PushTimeView.swift in Sources */,
 				34C656241F6A89C0000065DD /* Logo.swift in Sources */,
 				34C655B31F6A6992000065DD /* AppDelegate.swift in Sources */,
-				34A37C78201EC88C0039175F /* NewsBigPictrueCell.swift in Sources */,
+				527B1D0B21227C2000A6C3B4 /* PushSwitchCell.swift in Sources */,
 				34A37C7E201EE81F0039175F /* RadiusCorner.swift in Sources */,
-				34C655E11F6A6A2C000065DD /* AutoMHTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,7 +667,7 @@
 			baseConfigurationReference = 31B78E13522598AEA464AFC0 /* Pods-SwiftAutoCellHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = SwiftAutoCellHeight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeight;
@@ -667,7 +681,7 @@
 			baseConfigurationReference = 79C453CB2FF1F69AC9C4FBE5 /* Pods-SwiftAutoCellHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = SwiftAutoCellHeight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeight;
@@ -682,6 +696,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = SwiftAutoCellHeightTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightTests;
@@ -697,6 +712,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = SwiftAutoCellHeightTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightTests;
@@ -711,6 +727,7 @@
 			baseConfigurationReference = 72F29298B9552D9E290DEAE9 /* Pods-SwiftAutoCellHeightUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = SwiftAutoCellHeightUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightUITests;
@@ -725,6 +742,7 @@
 			baseConfigurationReference = D8C104101131095F7DBC562D /* Pods-SwiftAutoCellHeightUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = SwiftAutoCellHeightUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squirrelpay.SwiftAutoCellHeightUITests;

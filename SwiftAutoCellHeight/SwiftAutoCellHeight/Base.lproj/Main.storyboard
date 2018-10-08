@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CBe-PX-5w9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CBe-PX-5w9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -117,6 +117,39 @@
             </objects>
             <point key="canvasLocation" x="1382" y="602"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qCN-Ue-Wrm">
+            <objects>
+                <viewController id="z9O-sF-Kea" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="96s-3E-EZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="qBm-5P-Xgl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9zS-Ca-OPN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-CJ-wqf" customClass="PushTimeView" customModule="SwiftAutoCellHeight" customModuleProvider="target">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PHW-hr-GGh"/>
+                                    <constraint firstAttribute="height" constant="200" id="lPz-K8-QZD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7TB-CJ-wqf" firstAttribute="centerX" secondItem="9zS-Ca-OPN" secondAttribute="centerX" id="Opz-Xf-wJ9"/>
+                            <constraint firstItem="7TB-CJ-wqf" firstAttribute="centerY" secondItem="9zS-Ca-OPN" secondAttribute="centerY" id="s9p-j3-kLF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jf7-H7-u6E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGv-6G-7B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="929"/>
+        </scene>
         <!--Demo-->
         <scene sceneID="OKA-ga-Mtv">
             <objects>
@@ -143,7 +176,7 @@
                             </constraints>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="cLT-dA-1aC">
-                            <rect key="frame" x="0.0" y="217" width="375" height="164"/>
+                            <rect key="frame" x="0.0" y="277" width="375" height="164"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
@@ -175,6 +208,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="push" id="srD-EI-2jC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0bh-Sh-Gfq" detailTextLabel="uV5-Mv-mbw" style="IBUITableViewCellStyleSubtitle" id="AK5-8C-xbl">
+                                        <rect key="frame" x="0.0" y="217" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AK5-8C-xbl" id="Okt-CJ-cEt">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="JSON 动态表格示例" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0bh-Sh-Gfq">
+                                                    <rect key="frame" x="16" y="10" width="152.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="JSON dynamic table example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uV5-Mv-mbw">
+                                                    <rect key="frame" x="16" y="33.5" width="165.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="z9O-sF-Kea" kind="push" id="3kM-FR-FvR"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
