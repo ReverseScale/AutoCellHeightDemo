@@ -8,8 +8,9 @@
 
 import UIKit
 
-class Model: NSObject {
-    var title : String?
-    var picture : String?
-    var label : String?
+class PushInfoModel: NSObject {
+    var pushKey : String = ""
+    var pushTitle : String = ""
+    var pushType : Bool = true
+    var pushTip : String = ""
 }
